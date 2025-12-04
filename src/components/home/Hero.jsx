@@ -18,11 +18,11 @@ const Hero = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute w-full px-6 top-8 left-0 lg:max-w-[620px] lg:top-20 lg:left-72 lg:px-0">
-          <h1 className="text-4xl lg:text-7xl text-black font-normal  lg:text-left">
+        <div className="absolute w-full px-6 top-8 left-0 lg:max-w-[620px] lg:top-10 2xl:top-20 lg:left-10 2xl:left-72 lg:px-0">
+          <h1 className="text-4xl lg:text-5xl 2xl:text-7xl text-black font-normal  lg:text-left">
             Unlock the Door to
           </h1>
-          <h1 className="text-4xl lg:text-7xl text-black font-normal lg:text-left">
+          <h1 className="text-4xl lg:text-5xl 2xl:text-7xl text-black font-normal lg:text-left">
             Your{" "}
             <span
               className="bg-gradient-to-t to-[#0BC147] from-[#b6f50a] 
@@ -38,7 +38,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="bg-white border-t-6 border-t-lime-200 font-manrope rounded-3xl shadow-2xl p-6 lg:p-8 w-[90%] max-w-md absolute top-[280px] left-1/2 -translate-x-1/2 lg:top-20 lg:right-80 lg:left-auto lg:translate-x-0">
+        <div className="bg-white border-t-6 border-t-lime-200 font-manrope rounded-3xl shadow-2xl p-6 lg:p-8 w-[90%] max-w-md absolute top-[280px] left-1/2 -translate-x-1/2 lg:top-10 2xl:top-20 lg:right-20 2xl:right-80 lg:left-auto lg:translate-x-0">
           <h1 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-6 lg:mb-8 text-center lg:text-left">
             Find Your Dream Home
           </h1>
