@@ -194,7 +194,7 @@ export default function AgentsSection() {
                       <p>Listings</p>
                     </div>
                   </div>
-                  <button className="w-full mt-4 py-2 text-sm font-medium text-gray-700 hover:text-green-600 transition-colors">
+                  <button className="w-full mt-4 border border-gray-200 py-4 px-6 rounded-xl text-sm font-medium text-gray-700 hover:text-green-600 transition-colors">
                     View Details
                   </button>
                 </div>
