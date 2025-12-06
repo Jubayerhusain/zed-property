@@ -6,7 +6,7 @@ import Icon7 from "../../assets/Contact-assets/Step Icon Container (7).png";
 
 const Banner = () => {
   return (
-    <div className="pt-20 pb-24 bg-[#FAFAFA]  ">
+    <div className="sm:pt-20 py-12 sm:pb-24 bg-[#FAFAFA]  ">
       <div className="max-w-[1440px] mx-auto">
         <div className=" text-center py-5">
           <button class=" text-[16px] px-3 py-2 bg-[#FFFFFF] text-gray-500 border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition">

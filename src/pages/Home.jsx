@@ -6,7 +6,7 @@ import JourneySimplified from "./../assets/home-assets/JourneySimplified";
 import RealEstateListings from "../components/home/RealEstateListings";
 import TestimonialCarousel from "../components/home/TestimonialCarousel";
 import BlogArticleCarousel from './../components/home/BlogArticleCarousel';
-import ContactForm from './../components/home/ContactForm';
+import ContactForm from '../components/Shared/ContactForm';
 
 const Home = () => {
   return (
