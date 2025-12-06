@@ -6,7 +6,7 @@ import Network from '../components/About/Network';
 
 const About = () => {
     return (
-        <div>
+        <div className='px-4'>
             <Banner></Banner>
             <Founder></Founder>
             <Discover></Discover>
