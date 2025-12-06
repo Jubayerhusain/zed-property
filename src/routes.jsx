@@ -5,6 +5,7 @@ import Property from "./pages/Property";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Blogs from "./pages/Blogs";
+import Agents from "./pages/Agents";
 
 const router = createBrowserRouter([
   {
@@ -25,11 +26,15 @@ const router = createBrowserRouter([
       },
       {
         path: "contact",
-        element: <Contact></Contact>,
+        element: <Contact />,
       },
       {
         path: "blogs",
-        element: <Blogs></Blogs>,
+        element: <Blogs />,
+      },
+      {
+        path: "agents",
+        element: <Agents />,
       }
     ],
   },

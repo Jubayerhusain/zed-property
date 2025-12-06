@@ -297,7 +297,7 @@ export default function RealEstateBlog() {
                     onClick={() => handlePageChange(page)}
                     className={`w-10 h-10 rounded-lg font-medium transition ${
                       currentPage === page
-                        ? "bg-green-500 text-white"
+                        ? "bg-gradient-to-t to-[#0BC147] from-[#b6f50a] text-white"
                         : "hover:bg-gray-200 text-gray-700"
                     }`}
                   >

@@ -31,7 +31,7 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to="/agent"
+          to="/agents"
           className={({ isActive }) =>
             isActive
               ? "text-lg font-semibold text-[#0BC147] hover:text-[#03b33d]"
