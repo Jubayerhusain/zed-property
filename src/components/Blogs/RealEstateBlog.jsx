@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Search, ChevronLeft, ChevronRight, Divide } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function RealEstateBlog() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -250,7 +251,7 @@ export default function RealEstateBlog() {
             {/* Blog Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
               {currentPosts.map((post) => (
-                <div
+                <Link to={"/blog-details/:id"}
                   key={post.id}
                   className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 cursor-pointer"
                 >
@@ -269,7 +270,7 @@ export default function RealEstateBlog() {
                       {post.description}
                     </p>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
 

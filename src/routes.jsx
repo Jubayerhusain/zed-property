@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Blogs from "./pages/Blogs";
 import Agents from "./pages/Agents";
 import AgentDetails from "./pages/AgentDetails";
+import BlogDetails from "./pages/BlogDetails";
 
 const router = createBrowserRouter([
   {
@@ -40,7 +41,11 @@ const router = createBrowserRouter([
       {
         path: "agent-details/:id",
         element: <AgentDetails/>,
-      },
+      }, 
+       {
+        path: "blog-details/:id",
+        element: <BlogDetails/>,
+      }
     ],
   },
 ]);
