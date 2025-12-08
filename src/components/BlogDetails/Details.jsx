@@ -1,11 +1,13 @@
 import React from "react";
+
 import imag1 from "../../assets/Blog-assets/Blog Image.png";
 import imag2 from "../../assets/Blog-assets/Section 2 Image.png";
+import img from "../../assets/Blog-assets/Author Image.png";
 
 const Details = () => {
   return (
     <div>
-      <div className=" mx-5 sm:mx-10" >
+      <div className=" mx-5 sm:mx-10">
         <div className=" text-center py-5">
           <button class=" text-[16px] mt-4 px-3 py-2 bg-white text-gray-500 border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition">
             Blog Detail
@@ -24,6 +26,32 @@ const Details = () => {
             Explore expert articles and detailed insights to make informed
             decisions.
           </p>
+
+          <div className="flex  mx-auto items-center justify-between gap-6 rounded-xl border border-gray-100 my-5 px-6 py-4 w-full max-w-2xl bg-white shadow-sm">
+            {/* Profile */}
+            <div className="flex items-center gap-4">
+              <img
+                src={img}
+                alt="profile"
+                className="w-12 h-12 rounded-full object-cover"
+              />
+              <h2 className="text-lg font-semibold text-[#171C19B2]">
+                James Smith
+              </h2>
+            </div>
+
+            {/* Divider */}
+            <div className="h-8 w-px bg-gray-300"></div>
+
+            {/* Date */}
+            <p className="text-lg font-semibold text-[#171C19B2]">12 Nov 2024</p>
+
+            {/* Divider */}
+            <div className="h-6 w-px bg-gray-300"></div>
+
+            {/* Read Time */}
+            <p className="text-lg font-semibold text-[#171C19B2]">8 min Read</p>
+          </div>
         </div>
         <div>
           <div className="w-full h-[266px] sm:h-[540px] rounded-xl">
@@ -53,19 +81,19 @@ const Details = () => {
           {/* 3rd  */}
           <div>
             <h1 className=" text-xl text-[#171C19B2] py-5 border-b border-gray-100 font-medium">
-                Why Invest in Property?
+              Why Invest in Property?
             </h1>
           </div>
           {/* 4th  */}
           <div>
             <h1 className=" text-xl text-[#171C19B2] py-5 border-b border-gray-100 font-medium">
-                Choosing the Right Property
+              Choosing the Right Property
             </h1>
           </div>
           {/* 5th  */}
           <div>
             <h1 className=" text-xl text-[#171C19B2] py-5  font-medium">
-                Long-term Strategy in Property Investment
+              Long-term Strategy in Property Investment
             </h1>
           </div>
         </div>
@@ -132,9 +160,15 @@ const Details = () => {
           </div>
           {/* 4th */}
           <div className="pb-5">
-            <h1 className="text-[24px] font-semibold">Long-term Strategy in Property Investment</h1>
+            <h1 className="text-[24px] font-semibold">
+              Long-term Strategy in Property Investment
+            </h1>
             <h2 className="text-lg text-[#171C19B2] font-medium">
-                Property investment is a long-term game. Focus on purchasing properties with good growth potential and make repairs or renovations to increase their value. Diversify your property portfolio to reduce risk and maintain financial stability in the long run.
+              Property investment is a long-term game. Focus on purchasing
+              properties with good growth potential and make repairs or
+              renovations to increase their value. Diversify your property
+              portfolio to reduce risk and maintain financial stability in the
+              long run.
             </h2>
           </div>
         </div>
