@@ -1,9 +1,12 @@
 import React from 'react';
+import Details from '../components/BlogDetails/Details';
+import RelatedBlog from '../components/BlogDetails/RelatedBlog';
 
 const BlogDetails = () => {
     return (
         <div>
-            this is blogdetails
+            <Details />
+            <RelatedBlog></RelatedBlog>
         </div>
     );
 };
