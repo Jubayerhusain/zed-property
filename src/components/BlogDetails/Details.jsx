@@ -5,7 +5,8 @@ import imag2 from "../../assets/Blog-assets/Section 2 Image.png";
 const Details = () => {
   return (
     <div>
-      <div className=" mx-5 sm:mx-10" >
+
+      <div className=" sm:mx-5 " >
         <div className=" text-center py-5">
           <button class=" text-[16px] mt-4 px-3 py-2 bg-white text-gray-500 border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition">
             Blog Detail
@@ -26,16 +27,17 @@ const Details = () => {
           </p>
         </div>
         <div>
-          <div className="w-full h-[266px] sm:h-[540px] rounded-xl">
+          <div className="w-full h-[266px] sm:h-[540px] rounded sm:rounded-xl">
             <img
               src={imag1}
               alt=""
-              className=" w-full h-full rounded-xl object-cover"
+              className=" w-full h-full rounded sm:rounded-xl object-cover"
             />
           </div>
         </div>
       </div>
-      <div className="my-10 mx-5 sm:mx-10 grid grid-cols-1 sm:grid-cols-12 gap-5">
+
+      <div className="my-10 mx-5 grid grid-cols-1 sm:grid-cols-12 gap-5">
         {/* left side  */}
         <div className=" sm:col-span-4 sm:h-[430px] px-5 border border-gray-100 rounded-xl">
           {/* 1st  */}

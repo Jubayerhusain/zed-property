@@ -3,7 +3,7 @@ import ArnoldAlexander from '../components/AgentDetails/ArnoldAlexander';
 
 const AgentDetails = () => {
     return (
-        <div>
+        <div className='max-w-[1440px] mx-auto'>
             <ArnoldAlexander></ArnoldAlexander>
         </div>
     );

@@ -5,8 +5,8 @@ import image3 from "../../assets/Blog-assets/Listing Image (1).png";
 
 const RelatedBlog = () => {
   return (
-    <div className=" bg-[#FAFAFA]">
-      <div className=" py-10 sm:py-20 mx-5 sm:mx-10">
+    <div className=" bg-[#FAFAFA] border border-[#F3F3F3] rounded-xl mx-5">
+      <div className=" py-10 sm:py-20 sm:mx-5 mx-4">
         <div className=" text-center ">
           <button class=" text-[16px]  px-3 py-2 bg-white text-gray-500 border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition">
             Related Blog

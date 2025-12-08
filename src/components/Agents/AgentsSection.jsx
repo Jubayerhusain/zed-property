@@ -150,16 +150,18 @@ export default function AgentsSection() {
 
   return (
     <div className="bg-gray-50">
-      <div className="min-h-screen max-w-[1440px] mx-auto  py-12 px-4 sm:px-4 2xl:px-0" > 
-        <div className="">
+        <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1 bg-white rounded-full text-sm text-gray-600 mb-4">
               Our Agents
             </span>
             <h1 className="text-4xl font-playfair md:text-5xl mb-4">
               Meet Our{" "}
-              <span className="bg-gradient-to-t to-[#0BC147] from-[#b6f50a] 
-               bg-clip-text text-transparent italic">
+              <span
+                className="bg-gradient-to-t to-[#0BC147] from-[#b6f50a] 
+               bg-clip-text text-transparent italic"
+              >
                 Trusted Agents
               </span>
             </h1>
@@ -195,9 +197,14 @@ export default function AgentsSection() {
                       <p>Listings</p>
                     </div>
                   </div>
-                  <Link to={"/agent-details/:id"} className="w-full mt-4 border border-gray-200 py-4 px-6 rounded-xl text-sm font-medium text-gray-700 hover:text-green-600 transition-colors">
-                    View Details
-                  </Link>
+                  <button className="mt-4">
+                    <Link
+                      to={"/agent-details/:id"}
+                      className="w-full border border-gray-200 py-4 px-6 rounded-xl text-sm font-medium text-gray-700 hover:text-green-600 transition-colors"
+                    >
+                      View Details
+                    </Link>
+                  </button>
                 </div>
               </div>
             ))}

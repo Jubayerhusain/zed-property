@@ -4,7 +4,7 @@ import RelatedBlog from '../components/BlogDetails/RelatedBlog';
 
 const BlogDetails = () => {
     return (
-        <div>
+        <div className='max-w-[1440px] mx-auto'>
             <Details />
             <RelatedBlog></RelatedBlog>
         </div>

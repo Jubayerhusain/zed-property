@@ -7,7 +7,7 @@ import Icon4 from "../../assets/Agents-assets/house-2.png";
 
 const ArnoldAlexander = () => {
   return (
-    <div className="mx-4 md:mx-10 py-5">
+    <div className="mx-4 md:mx-5 py-5">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         
         {/* Left Side */}
