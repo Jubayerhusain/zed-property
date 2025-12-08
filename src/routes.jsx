@@ -8,6 +8,7 @@ import Blogs from "./pages/Blogs";
 import Agents from "./pages/Agents";
 import AgentDetails from "./pages/AgentDetails";
 import BlogDetails from "./pages/BlogDetails";
+import PropertyDetails from "./pages/PropertyDetails";
 
 const router = createBrowserRouter([
   {
@@ -40,12 +41,16 @@ const router = createBrowserRouter([
       },
       {
         path: "agent-details/:id",
-        element: <AgentDetails/>,
-      }, 
-       {
+        element: <AgentDetails />,
+      },
+      {
         path: "blog-details/:id",
-        element: <BlogDetails/>,
-      }
+        element: <BlogDetails />,
+      },
+      {
+        path: "property-details/:id",
+        element: <PropertyDetails />,
+      },
     ],
   },
 ]);

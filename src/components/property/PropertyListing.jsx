@@ -14,6 +14,7 @@ import buildings from "../../assets/property-assets/buildings.png";
 import buliding from "../../assets/property-assets/buliding.png";
 import hospital from "../../assets/property-assets/hospital.png";
 import house from "../../assets/property-assets/house.png";
+import { Link } from "react-router-dom";
 
 const PropertyListing = () => {
   const [location, setLocation] = useState("New York, US");
@@ -689,7 +690,7 @@ const PropertyListing = () => {
             {currentProperties.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 {currentProperties.map((property) => (
-                  <div
+                  <Link to={'/property-details/:id'}
                     key={property.id}
                     className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
                   >
@@ -731,7 +732,7 @@ const PropertyListing = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             ) : (
