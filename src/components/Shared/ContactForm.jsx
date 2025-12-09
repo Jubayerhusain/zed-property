@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import contactImage from "../../assets/home-assets/contact.png";
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -74,7 +75,7 @@ const ContactForm = () => {
       <div className="max-w-[1440px] mx-auto">
         <div className="text-center mb-12">
           <p className="text-gray-500 text-sm mb-2 font-manrope">Contact Us</p>
-          <h1 className="text-5xl font-serif mb-4">
+          <h1 className="text-3xl sm:text-5xl font-serif mb-4">
             Let's Get in{" "}
             <span
               className="bg-gradient-to-t to-[#0BC147] from-[#b6f50a] 

@@ -66,7 +66,7 @@ const BlogArticleCarousel = () => {
         <div className="flex justify-between items-center mb-12">
           <div>
             <p className="text-gray-500 text-sm mb-2 font-manrope">Blog</p>
-            <h1 className="text-5xl font-serif">
+            <h1 className="text-3xl sm:text-5xl font-serif">
               Our <span className="bg-gradient-to-t to-[#0BC147] from-[#b6f50a] 
   bg-clip-text text-transparent italic">Article</span>
             </h1>

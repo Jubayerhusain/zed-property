@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 import propertyImage from "../../assets/home-assets/Complete-Property-Image.png";
 export default function TrustedPartner() {
   return (
-    <div className="w-full bg-white py-16 px-4 lg:px-8 mt-10">
+    <div className="w-full bg-white py-16 px-4 lg:px-8 mt-70 sm:mt-10">
       <div className="max-w-[1440px] mx-auto">
         <div className="text-center mb-12">
           <p className="text-sm text-gray-800 mb-2">Who We Are</p>

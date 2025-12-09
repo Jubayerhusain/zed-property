@@ -85,7 +85,7 @@ const TestimonialCarousel = () => {
             <p className="text-gray-500 text-sm mb-2 font-manrope">
               Testimonial
             </p>
-            <h1 className="text-5xl font-serif">
+            <h1 className="text-3xl sm:text-5xl font-serif">
               Client{" "}
               <span
                 className="bg-gradient-to-t to-[#0BC147] from-[#b6f50a] 

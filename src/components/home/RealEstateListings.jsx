@@ -139,7 +139,7 @@ const RealEstateListings = () => {
         <div className="flex justify-between items-center mb-8">
           <div>
             <p className="text-gray-500 text-sm mb-2">New Property</p>
-            <h1 className="text-5xl font-serif">
+            <h1 className="text-3xl sm:text-5xl font-serif">
               Newest{" "}
               <span
                 className="bg-gradient-to-t to-[#0BC147] from-[#b6f50a] 
