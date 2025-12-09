@@ -6,7 +6,7 @@ const Leftsit = () => {
   return (
     <div>
       <div className="border border-gray-100 p-5">
-        <div className="w-[388px] h-[330px] pb-5">
+        <div className="w-full sm:w-[388px] h-[330px] pb-5">
           <img src={img1} alt="" className=" w-full h-full" />
         </div>
         <div className="flex justify-between px-5 pb-5">

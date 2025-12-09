@@ -7,7 +7,7 @@ const PropertyDetails = () => {
   return (
     <div className="max-w-[1440px] mx-auto">
       <PropertyHero />
-      <div className="flex flex-col sm:flex-row justify-between  gap-5 sm:gap-10">
+      <div className="flex flex-col sm:flex-row justify-between  gap-5 sm:gap-10 sm:px-5">
         {/* left */}
         <div className="">
           <DetailsProperty />
