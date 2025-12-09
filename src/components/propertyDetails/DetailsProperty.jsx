@@ -1,14 +1,15 @@
 import React from "react";
-import Icon from "../../assets/property-assets/Step Icon Container.png"
-import Icon1 from "../../assets/property-assets/Step Icon Container (1).png"
-import Icon2 from "../../assets/property-assets/Step Icon Container (2).png"
-import Icon3 from "../../assets/property-assets/Step Icon Container (3).png"
-import Icon4 from "../../assets/property-assets/Step Icon Container (4).png"
-import Icon5 from "../../assets/property-assets/Step Icon Container (5).png"
-import Icon6 from "../../assets/property-assets/Step Icon Container (6).png"
-import Icon7 from "../../assets/property-assets/Step Icon Container (7).png"
-import  Image1  from "../../assets/property-assets/Video Tour Image.png";
-import  Image2  from "../../assets/property-assets/Location Image.png";
+import Icon from "../../assets/property-assets/Step-Icon-Container.png"
+import Icon1 from "../../assets/property-assets/Step-Icon-Container-(1).png"
+import Icon2 from "../../assets/property-assets/Step-Icon-Container-(2).png"
+import Icon3 from "../../assets/property-assets/Step-Icon-Container-(3).png"
+import Icon4 from "../../assets/property-assets/Step-Icon-Container-(4).png"
+import Icon5 from "../../assets/property-assets/Step-Icon-Container-(5).png"
+import Icon6 from "../../assets/property-assets/Step-Icon-Container-(6).png"
+import Icon7 from "../../assets/property-assets/Step-Icon-Container-(7).png"
+import  Image1  from "../../assets/property-assets/Video-Tour-Image.png";
+import  Image2  from "../../assets/property-assets/Location-Image.png";
+
 
 export default function DetailsProperty() {
   return (
