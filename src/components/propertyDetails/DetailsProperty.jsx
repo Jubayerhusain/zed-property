@@ -1,16 +1,25 @@
 import React from "react";
-import { MapPin, Home, Bath, Utensils, Bed, Warehouse, LayoutGrid, CheckSquare, Calendar } from "lucide-react";
+import Icon from "../../assets/property-assets/Step Icon Container.png"
+import Icon1 from "../../assets/property-assets/Step Icon Container (1).png"
+import Icon2 from "../../assets/property-assets/Step Icon Container (2).png"
+import Icon3 from "../../assets/property-assets/Step Icon Container (3).png"
+import Icon4 from "../../assets/property-assets/Step Icon Container (4).png"
+import Icon5 from "../../assets/property-assets/Step Icon Container (5).png"
+import Icon6 from "../../assets/property-assets/Step Icon Container (6).png"
+import Icon7 from "../../assets/property-assets/Step Icon Container (7).png"
+import  Image1  from "../../assets/property-assets/Video Tour Image.png";
+import  Image2  from "../../assets/property-assets/Location Image.png";
 
 export default function DetailsProperty() {
   return (
-    <div className=" max-w-4xl border border-gray-200 rounded-lg sm:rounded-2xl mx-4 p-5 bg-white">
+    <div className=" grid grid-cols-1 gap-5 w-full sm:max-w-4xl my-20 mx-4" >
+      <div className=" border border-gray-200 rounded-lg sm:rounded-2xl  p-5 bg-white">
       {/* Header */}
       <div className="mb-6">
         <h1 className="text-4xl font-bold text-gray-900 mb-3">
           Manstret Haven / $425,000
         </h1>
         <div className="flex items-center gap-2 text-gray-600">
-          <MapPin size={20} />
           <span className="text-lg">New York, United States</span>
         </div>
       </div>
@@ -37,9 +46,9 @@ export default function DetailsProperty() {
         {/* Features Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {/* Rooms */}
-          <div className="flex items-center gap-3 p-4 bg-green-50 rounded-lg">
+          <div className="flex items-center gap-3 p-4 rounded-lg">
             <div className="text-green-500">
-              <Home size={24} />
+              <img src={Icon} alt="" />
             </div>
             <div>
               <div className="text-gray-900 font-semibold">Rooms</div>
@@ -48,9 +57,9 @@ export default function DetailsProperty() {
           </div>
 
           {/* Baths */}
-          <div className="flex items-center gap-3 p-4 bg-green-50 rounded-lg">
+          <div className="flex items-center gap-3 p-4  rounded-lg">
             <div className="text-green-500">
-              <Bath size={24} />
+              <img src={Icon1} alt="" />
             </div>
             <div>
               <div className="text-gray-900 font-semibold">Baths</div>
@@ -59,9 +68,10 @@ export default function DetailsProperty() {
           </div>
 
           {/* Kitchen */}
-          <div className="flex items-center gap-3 p-4 bg-green-50 rounded-lg">
+          <div className="flex items-center gap-3 p-4  rounded-lg">
             <div className="text-green-500">
-              <Utensils size={24} />
+                <img src={Icon2} alt="" />
+
             </div>
             <div>
               <div className="text-gray-900 font-semibold">Kitchen</div>
@@ -70,9 +80,9 @@ export default function DetailsProperty() {
           </div>
 
           {/* Year Build */}
-          <div className="flex items-center gap-3 p-4 bg-green-50 rounded-lg">
+          <div className="flex items-center gap-3 p-4 rounded-lg">
             <div className="text-green-500">
-              <Calendar size={24} />
+              <img src={Icon3} alt="" />
             </div>
             <div>
               <div className="text-gray-900 font-semibold">Year Build</div>
@@ -81,9 +91,9 @@ export default function DetailsProperty() {
           </div>
 
           {/* Beds */}
-          <div className="flex items-center gap-3 p-4 bg-green-50 rounded-lg">
+          <div className="flex items-center gap-3 p-4  rounded-lg">
             <div className="text-green-500">
-              <Bed size={24} />
+              <img src={Icon4} alt="" />
             </div>
             <div>
               <div className="text-gray-900 font-semibold">Beds</div>
@@ -92,9 +102,10 @@ export default function DetailsProperty() {
           </div>
 
           {/* Garage */}
-          <div className="flex items-center gap-3 p-4 bg-green-50 rounded-lg">
+          <div className="flex items-center gap-3 p-4 rounded-lg">
             <div className="text-green-500">
-              <Warehouse size={24} />
+              <img src={Icon5} alt="" />
+
             </div>
             <div>
               <div className="text-gray-900 font-semibold">Garage</div>
@@ -103,9 +114,9 @@ export default function DetailsProperty() {
           </div>
 
           {/* Type */}
-          <div className="flex items-center gap-3 p-4 bg-green-50 rounded-lg">
+          <div className="flex items-center gap-3 p-4 rounded-lg">
             <div className="text-green-500">
-              <LayoutGrid size={24} />
+                <img src={Icon6} alt="" />
             </div>
             <div>
               <div className="text-gray-900 font-semibold">Type</div>
@@ -114,15 +125,28 @@ export default function DetailsProperty() {
           </div>
 
           {/* Sqft */}
-          <div className="flex items-center gap-3 p-4 bg-green-50 rounded-lg">
+          <div className="flex items-center gap-3 p-4  rounded-lg">
             <div className="text-green-500">
-              <CheckSquare size={24} />
+              <img src={Icon7} alt="" />
             </div>
             <div>
               <div className="text-gray-900 font-semibold">Sqft</div>
               <div className="text-gray-600">2,820</div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div className="  px-5 border border-gray-100 rounded-xl " >
+        <h1 className=" text-2xl pt-5 font-semibold " >Property Video Tour</h1>
+        <div className="py-5 w-full h-full sm:w-[832px] sm:h-[512px]" >
+          <img src={Image1} alt="" className=" w-full h-full rounded-xl" />
+        </div>
+      </div>
+      <div className="  px-5 border border-gray-100 rounded-xl " >
+        <h1 className=" text-2xl pt-5 font-semibold " >Property Location</h1>
+        <div className="py-5 w-full h-full sm:w-[832px] sm:h-[512px]" >
+          <img src={Image2} alt="" className=" w-full h-full rounded-xl" />
         </div>
       </div>
     </div>
