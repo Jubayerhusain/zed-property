@@ -13,7 +13,7 @@ import  Image2  from "../../assets/property-assets/Location-Image.png";
 
 export default function DetailsProperty() {
   return (
-    <div className=" grid grid-cols-1 gap-5 w-full col-span-8 my-20 mx-4" >
+    <div className=" grid grid-cols-1 gap-5 w-full col-span-8  mx-4" >
       <div className=" border border-gray-200 rounded-lg sm:rounded-2xl  p-5 bg-white">
       {/* Header */}
       <div className="mb-6">
@@ -138,15 +138,16 @@ export default function DetailsProperty() {
         </div>
       </div>
     </div>
+
     <div className="  px-5 border border-gray-100 rounded-xl " >
         <h1 className=" text-2xl pt-5 font-semibold " >Property Video Tour</h1>
-        <div className="py-5 w-full h-full sm:w-[832px] sm:h-[512px]" >
+        <div className="py-5 w-full h-full  sm:h-[512px]" >
           <img src={Image1} alt="" className=" w-full h-full rounded-xl" />
         </div>
       </div>
       <div className="  px-5 border border-gray-100 rounded-xl " >
         <h1 className=" text-2xl pt-5 font-semibold " >Property Location</h1>
-        <div className="py-5 w-full h-full sm:w-[832px] sm:h-[512px]" >
+        <div className="py-5 w-full h-full  sm:h-[512px]" >
           <img src={Image2} alt="" className=" w-full h-full rounded-xl" />
         </div>
       </div>
