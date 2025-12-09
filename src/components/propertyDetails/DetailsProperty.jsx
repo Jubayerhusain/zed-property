@@ -13,7 +13,7 @@ import  Image2  from "../../assets/property-assets/Location-Image.png";
 
 export default function DetailsProperty() {
   return (
-    <div className=" grid grid-cols-1 gap-5 w-full sm:max-w-4xl my-20 mx-4" >
+    <div className=" grid grid-cols-1 gap-5 w-full col-span-8 my-20 mx-4" >
       <div className=" border border-gray-200 rounded-lg sm:rounded-2xl  p-5 bg-white">
       {/* Header */}
       <div className="mb-6">
