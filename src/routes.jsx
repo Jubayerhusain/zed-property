@@ -10,6 +10,7 @@ import AgentDetails from "./pages/AgentDetails";
 import BlogDetails from "./pages/BlogDetails";
 import PropertyDetails from "./pages/PropertyDetails";
 import UserLogin from "./pages/UserLogin";
+import UserRegistation from "./pages/UserRegistation";
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
         {
         path: "user-login",
         element: <UserLogin /> ,
+      },
+        {
+        path: "user-registation",
+        element: <UserRegistation/> ,
       }
       
     ],
