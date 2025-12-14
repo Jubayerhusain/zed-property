@@ -9,6 +9,7 @@ import Agents from "./pages/Agents";
 import AgentDetails from "./pages/AgentDetails";
 import BlogDetails from "./pages/BlogDetails";
 import PropertyDetails from "./pages/PropertyDetails";
+import UserLogin from "./pages/UserLogin";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,12 @@ const router = createBrowserRouter([
         path: "property-details/:id",
         element: <PropertyDetails />,
       },
+      //  user authentication routes 
+        {
+        path: "user-login",
+        element: <UserLogin /> ,
+      }
+      
     ],
   },
 ]);
