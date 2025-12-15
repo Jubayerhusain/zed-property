@@ -116,17 +116,17 @@ const Navbar = () => {
               className=" menu menu-sm dropdown-content bg-base-100 rounded-box z-1 right-0 w-52 p-2 ml-0 shadow"
             >
               {linkCenter}
-              <a className="btn border-[#63e32d] rounded-lg mb-2">
+              <NavLink to={"agent-SingIn"} className="btn border-[#63e32d] rounded-lg mb-2">
                 Join As Agent
-              </a>
+              </NavLink>
               <NavLink to={"user-login"} className="btn rounded-lg bg-gradient-to-b from-[#63e32d] to-[#aff50a] text-white">
                 Log In
               </NavLink>
             </ul>
           </div>
-          <a className="btn border-[#63e32d] rounded-lg sm:block pt-2 hidden">
+          <NavLink to={"agent-SingIn"} className="btn border-[#63e32d] rounded-lg sm:block pt-2 hidden">
             Join As Agent
-          </a>
+          </NavLink>
           <NavLink to={"user-login"}  className="btn rounded-lg bg-gradient-to-b from-[#63e32d] pt-2 to-[#aff50a] text-white sm:block hidden">
             Log In
           </NavLink>

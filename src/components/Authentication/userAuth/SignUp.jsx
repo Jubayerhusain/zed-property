@@ -2,7 +2,8 @@ import React from "react";
 
 const SignUp = () => {
   return (
-    <div className="w-full sm:w-9/12 mx-auto" >
+   <div className=" bg-gray-200" >
+     <div className="w-full py-10 sm:w-9/12 mx-auto" >
       <div className=" shadow-xl  rounded-2xl flex flex-col-reverse sm:flex-row my-10  mx-auto ">
         <div className="w-full p-5 sm:p-0 sm:w-4/8 rounded-xl sm:rounded-r-none ">
           <img
@@ -79,6 +80,7 @@ const SignUp = () => {
         </div>
       </div>
     </div>
+   </div>
   );
 };
 

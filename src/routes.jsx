@@ -9,8 +9,12 @@ import Agents from "./pages/Agents";
 import AgentDetails from "./pages/AgentDetails";
 import BlogDetails from "./pages/BlogDetails";
 import PropertyDetails from "./pages/PropertyDetails";
-import UserLogin from "./pages/UserLogin";
-import UserRegistation from "./pages/UserRegistation";
+import SignIn from "./components/Authentication/userAgent/SignIn";
+import UserLogin from "./pages/userAuthPages/UserLogin";
+import UserRegistation from "./pages/userAuthPages/UserRegistation";
+import UserForgetPassword from "./pages/userAuthPages/UserForgetPassword";
+import SignUp from "./components/Authentication/userAgent/SignUp";
+import ForgetPassword2 from "./components/Authentication/userAgent/ForgetPassword2";
 
 const router = createBrowserRouter([
   {
@@ -61,6 +65,23 @@ const router = createBrowserRouter([
         {
         path: "user-registation",
         element: <UserRegistation/> ,
+      }, 
+       {
+        path: "/user-forgetPassword",
+        element: <UserForgetPassword/> ,
+      },
+      // user-agent 
+       {
+        path: "agent-SingIn",
+        element: <SignIn/> ,
+      },
+       {
+        path: "agent-singup",
+        element: <SignUp/> ,
+      },
+       {
+        path: "agent-forget-password",
+        element: <ForgetPassword2/> ,
       }
       
     ],
