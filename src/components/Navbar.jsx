@@ -1,6 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Links, NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
+import { Link } from "lucide-react";
 
 const Navbar = () => {
   const linkCenter = (
@@ -115,20 +116,20 @@ const Navbar = () => {
               className=" menu menu-sm dropdown-content bg-base-100 rounded-box z-1 right-0 w-52 p-2 ml-0 shadow"
             >
               {linkCenter}
-              <a className="btn border-[#63e32d] rounded-lg mb-2">
+              <NavLink to={"agent-SingIn"} className="btn border-[#63e32d] rounded-lg mb-2">
                 Join As Agent
-              </a>
-              <a className="btn rounded-lg bg-gradient-to-b from-[#63e32d] to-[#aff50a] text-white">
+              </NavLink>
+              <NavLink to={"user-login"} className="btn rounded-lg bg-gradient-to-b from-[#63e32d] to-[#aff50a] text-white">
                 Log In
-              </a>
+              </NavLink>
             </ul>
           </div>
-          <a className="btn border-[#63e32d] rounded-lg sm:block pt-2 hidden">
+          <NavLink to={"agent-SingIn"} className="btn border-[#63e32d] rounded-lg sm:block pt-2 hidden">
             Join As Agent
-          </a>
-          <a className="btn rounded-lg bg-gradient-to-b from-[#63e32d] pt-2 to-[#aff50a] text-white sm:block hidden">
+          </NavLink>
+          <NavLink to={"user-login"}  className="btn rounded-lg bg-gradient-to-b from-[#63e32d] pt-2 to-[#aff50a] text-white sm:block hidden">
             Log In
-          </a>
+          </NavLink>
         </div>
       </div>
     </>
