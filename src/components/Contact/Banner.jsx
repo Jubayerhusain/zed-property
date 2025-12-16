@@ -60,7 +60,7 @@ const Banner = () => {
             </div>
             <h1 className="text-xl py-2 font-semibold">Visit Us</h1>
             <p className="text-[16px] text-[#171C19B2] font-semibold pb-2 ">
-              Visit our office HQ.
+              Lusaka, Kitwe and Ndola.
             </p>
             <button class=" w-full py-1.5 border border-gray-300 rounded-xl text-gray-600 text-sm bg-white">
               Get Directions
