@@ -1,10 +1,11 @@
 import React from 'react';
 import { GoArrowLeft } from "react-icons/go";
+import { NavLink } from 'react-router-dom';
 
 
 const ForgetPassword2 = () => {
     return (
-        <div> <div className="bg-gray-200 sm:py-20 p-5 " >
+        <div className="bg-gray-200 sm:py-20 p-5 " >
              <div className="w-full sm:w-9/12  mx-auto">
               <div className=" shadow-xl  rounded-2xl flex flex-col-reverse sm:flex-row   mx-auto ">
                 <div className="w-full pt-5 sm:p-0 sm:w-4/8 rounded-xl sm:rounded-r-none ">
@@ -33,20 +34,19 @@ const ForgetPassword2 = () => {
                     <button className="rounded-lg py-1 text-white bg-gradient-to-t from-green-400 to-lime-300 ">
                      Reset Password
                     </button>
-                    <div className=' pt-5 flex items-center justify-center gap-2' >
+                    <NavLink to={"/agent-SingIn"} className=' pt-5 flex items-center justify-center gap-2' >
                         <div>
                             <GoArrowLeft></GoArrowLeft>
                         </div>
-                        <h1 className='text-sm font-semibold'>
+                        <a className='text-sm font-semibold'>
                             Back to login
-                        </h1>
-                    </div>
+                        </a>
+                    </NavLink>
                   </div>
                 </div>
               </div>
             </div>
            </div>
-        </div>
     );
 };
 
