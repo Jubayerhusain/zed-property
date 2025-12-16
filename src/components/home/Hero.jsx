@@ -114,10 +114,10 @@ const Hero = () => {
                   className="w-full pl-16 pr-12 py-3 lg:py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-gray-300 text-gray-700 appearance-none bg-white"
                 >
                   <option value="">Choose Your Budget</option>
-                  <option value="0-100k">$0 - $100,000</option>
-                  <option value="100k-250k">$100,000 - $250,000</option>
-                  <option value="250k-500k">$250,000 - $500,000</option>
-                  <option value="500k+">$500,000+</option>
+                  <option value="0-100k">ZMW 0 - ZMW 100,000</option>
+                  <option value="100k-250k">ZMW 100,000 - ZMW 250,000</option>
+                  <option value="250k-500k">ZMW 250,000 - ZMW 500,000</option>
+                  <option value="500k+">ZMW 500,000+</option>
                 </select>
                 <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
               </div>

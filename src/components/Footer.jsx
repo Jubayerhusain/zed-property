@@ -17,7 +17,7 @@ const Footer = () => {
     },
     {
       title: "Contact",
-      links: ["Chat Our Support", "ZedProperty@gmail.com", "+1 814 637 1529"],
+      links: ["Location: Lusaka, Kitwe and Ndola.", "Chat Our Support", "ZedProperty@gmail.com", "+1 814 637 1529"],
     },
   ];
 
