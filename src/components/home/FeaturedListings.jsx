@@ -89,7 +89,7 @@ export default function FeaturedListings() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {properties.map((property) => (
             <Link to={'/property-details/:id'}
-              key={property.id} 
+              key={property.id}
               className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               <div className="relative h-64 overflow-hidden">

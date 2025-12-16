@@ -58,14 +58,16 @@ const Hero = () => {
                   className="w-full pl-16 pr-12 py-3 lg:py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-gray-300 text-gray-700 appearance-none bg-white"
                 >
                   <option value="">Enter City Or Area</option>
-                  <option value="new-york">New York</option>
-                  <option value="los-angeles">Los Angeles</option>
-                  <option value="chicago">Chicago</option>
-                  <option value="houston">Houston</option>
-                  <option value="miami">Miami</option>
-                  <option value="san-francisco">San Francisco</option>
-                  <option value="boston">Boston</option>
-                  <option value="seattle">Seattle</option>
+                  <option value="new-york">Lusaka</option>
+                  <option value="los-angeles">Kitwe</option>
+                  <option value="chicago">Ndola</option>
+                  <option value="houston">Chipata</option>
+                  <option value="miami">Kabwe</option>
+                  <option value="san-francisco">Chingola</option>
+                  <option value="boston">Mufulira</option>
+                  <option value="seattle">Luanshya</option>
+                  <option value="seattle">Livingstone</option>
+                  <option value="seattle">Kasama</option>
                 </select>
                 <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
               </div>
