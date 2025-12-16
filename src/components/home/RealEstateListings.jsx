@@ -8,7 +8,7 @@ const RealEstateListings = () => {
     {
       id: 1,
       title: "Classic Damara",
-      price: "$480,500",
+      price: "ZMW 480,500",
       location: "Seattle, United States",
       beds: 4,
       baths: 2,
@@ -19,7 +19,7 @@ const RealEstateListings = () => {
     {
       id: 2,
       title: "Manstret Haven",
-      price: "$425,000",
+      price: "ZMW 425,000",
       location: "New York, United States",
       beds: 4,
       baths: 2,
@@ -30,7 +30,7 @@ const RealEstateListings = () => {
     {
       id: 3,
       title: "Boston Retreat",
-      price: "$350,800",
+      price: "ZMW 350,800",
       location: "Nashville, United States",
       beds: 3,
       baths: 2,
@@ -41,7 +41,7 @@ const RealEstateListings = () => {
     {
       id: 4,
       title: "Sunset Villa",
-      price: "$520,000",
+      price: "ZMW 520,000",
       location: "Los Angeles, United States",
       beds: 5,
       baths: 3,
@@ -52,7 +52,7 @@ const RealEstateListings = () => {
     {
       id: 5,
       title: "Urban Loft",
-      price: "$395,000",
+      price: "ZMW 395,000",
       location: "Chicago, United States",
       beds: 3,
       baths: 2,
@@ -63,7 +63,7 @@ const RealEstateListings = () => {
     {
       id: 6,
       title: "Coastal Paradise",
-      price: "$680,000",
+      price: "ZMW 680,000",
       location: "Miami, United States",
       beds: 4,
       baths: 3,
@@ -74,7 +74,7 @@ const RealEstateListings = () => {
     {
       id: 7,
       title: "Mountain Escape",
-      price: "$455,000",
+      price: "ZMW 455,000",
       location: "Denver, United States",
       beds: 4,
       baths: 2,
@@ -85,7 +85,7 @@ const RealEstateListings = () => {
     {
       id: 8,
       title: "Lakeside Cottage",
-      price: "$510,200",
+      price: "ZMW 510,200",
       location: "Minnesota, United States",
       beds: 3,
       baths: 2,
@@ -96,7 +96,7 @@ const RealEstateListings = () => {
     {
       id: 9,
       title: "Modern Penthouse",
-      price: "$850,000",
+      price: "ZMW 850,000",
       location: "San Francisco, United States",
       beds: 4,
       baths: 3,
@@ -107,7 +107,7 @@ const RealEstateListings = () => {
     {
       id: 10,
       title: "Greenwood Residence",
-      price: "$420,750",
+      price: "ZMW 420,750",
       location: "Portland, United States",
       beds: 3,
       baths: 2,

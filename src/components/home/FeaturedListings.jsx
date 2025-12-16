@@ -3,6 +3,7 @@ import { MapPin, Bed, Bath, Maximize } from 'lucide-react';
 import maximize from '../../assets/home-assets/maximize-3.png'
 import solar_bath_linear from '../../assets/home-assets/solar_bath-linear.png'
 import solar_bed_broken from '../../assets/home-assets/solar_bed-broken.png'
+import { Link } from 'react-router-dom';
 
 
 export default function FeaturedListings() {
@@ -11,7 +12,7 @@ export default function FeaturedListings() {
     {
       id: 1,
       title: "Classic Damara",
-      price: "$480,500",
+      price: "ZMW 480,500",
       location: "Seattle, United States",
       beds: 4,
       baths: 2,
@@ -21,7 +22,7 @@ export default function FeaturedListings() {
     {
       id: 2,
       title: "Manstret Haven",
-      price: "$425,000",
+      price: "ZMW 425,000",
       location: "New York, United States",
       beds: 4,
       baths: 2,
@@ -31,7 +32,7 @@ export default function FeaturedListings() {
     {
       id: 3,
       title: "Boston Retreat",
-      price: "$350,800",
+      price: "ZMW 350,800",
       location: "Nashville, United States",
       beds: 3,
       baths: 2,
@@ -41,7 +42,7 @@ export default function FeaturedListings() {
     {
       id: 4,
       title: "Phenix Otica",
-      price: "$428,100",
+      price: "ZMW 428,100",
       location: "Las Vegas, United States",
       beds: 3,
       baths: 2,
@@ -51,7 +52,7 @@ export default function FeaturedListings() {
     {
       id: 5,
       title: "Welvore Henix",
-      price: "$480,500",
+      price: "ZMW 480,500",
       location: "Denver, United States",
       beds: 4,
       baths: 2,
@@ -61,7 +62,7 @@ export default function FeaturedListings() {
     {
       id: 6,
       title: "Havasu Bave",
-      price: "$398,600",
+      price: "ZMW 398,600",
       location: "Charlotte, United States",
       beds: 3,
       baths: 2,
@@ -87,7 +88,7 @@ export default function FeaturedListings() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {properties.map((property) => (
-            <div 
+            <Link to={'/property-details/:id'}
               key={property.id} 
               className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
@@ -125,7 +126,7 @@ export default function FeaturedListings() {
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
