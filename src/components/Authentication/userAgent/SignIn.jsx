@@ -45,7 +45,7 @@ const SignIn = () => {
                   </div>
                   <h1 className=" text-center font-semibold text-sm gap-1 pt-5">
                     Don’t have an account?
-                    <NavLink to={"/join-as-agent/agent-singup"} className="text-green-400 pl-1">Register now</NavLink>
+                    <NavLink to={"/join-as-agent/user-information"} className="text-green-400 pl-1">Register now</NavLink>
                   </h1>
                 </div>
               </div>

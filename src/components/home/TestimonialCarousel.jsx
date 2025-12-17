@@ -78,7 +78,7 @@ const TestimonialCarousel = () => {
   );
 
   return (
-    <div className="bg-gray-100 p-8 font-manrope">
+    <div className="bg-gray-100 p-5 sm:p-8 font-manrope">
       <div className="max-w-[1440px] mx-auto">
         <div className="flex justify-between items-center mb-12">
           <div>

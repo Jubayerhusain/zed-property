@@ -134,7 +134,7 @@ const RealEstateListings = () => {
   );
 
   return (
-    <div className=" bg-gray-50 px-8 py-18">
+    <div className=" bg-gray-50 px-5 sm:px-8 py-18">
       <div className="max-w-[1440px] mx-auto">
         <div className="flex justify-between items-center mb-8">
           <div>

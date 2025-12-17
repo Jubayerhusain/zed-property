@@ -13,9 +13,10 @@ import SignIn from "./components/Authentication/userAgent/SignIn";
 import UserLogin from "./pages/userAuthPages/UserLogin";
 import UserRegistation from "./pages/userAuthPages/UserRegistation";
 import UserForgetPassword from "./pages/userAuthPages/UserForgetPassword";
-import SignUp from "./components/Authentication/userAgent/SignUp";
 import ForgetPassword2 from "./components/Authentication/userAgent/ForgetPassword2";
 import JoinAgentLayout from "./layouts/JoinAgentLayout";
+import UserInformation from "./pages/agentAuthPages/UserInformation";
+import BusinessDetails1 from "./pages/agentAuthPages/BusinessDetails1";
 
 const router = createBrowserRouter([
   {
@@ -93,9 +94,16 @@ const router = createBrowserRouter([
     element: <JoinAgentLayout></JoinAgentLayout>,
     children:[
       {
-        path: "agent-singup",
-        element: <SignUp/> ,
+        path: "user-information",
+        element: <UserInformation /> ,
       },
+       {
+        path: "Business-details",
+        element: <BusinessDetails1 /> ,
+      },
+    
+      
+      
     ]
   }
 ]);
