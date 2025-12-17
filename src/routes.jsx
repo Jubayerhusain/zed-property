@@ -15,6 +15,7 @@ import UserRegistation from "./pages/userAuthPages/UserRegistation";
 import UserForgetPassword from "./pages/userAuthPages/UserForgetPassword";
 import SignUp from "./components/Authentication/userAgent/SignUp";
 import ForgetPassword2 from "./components/Authentication/userAgent/ForgetPassword2";
+import JoinAgentLayout from "./layouts/JoinAgentLayout";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
+        path: "/home",
+        element: <Home />,
+      },
+       {
         path: "property",
         element: <Property />,
       },
@@ -67,7 +72,7 @@ const router = createBrowserRouter([
         element: <UserRegistation/> ,
       }, 
        {
-        path: "/user-forgetPassword",
+        path: "user-forgetPassword",
         element: <UserForgetPassword/> ,
       },
       // user-agent 
@@ -75,10 +80,7 @@ const router = createBrowserRouter([
         path: "agent-SingIn",
         element: <SignIn/> ,
       },
-       {
-        path: "agent-singup",
-        element: <SignUp/> ,
-      },
+       
        {
         path: "agent-forget-password",
         element: <ForgetPassword2/> ,
@@ -86,6 +88,16 @@ const router = createBrowserRouter([
       
     ],
   },
+  {
+    path:"join-as-agent",
+    element: <JoinAgentLayout></JoinAgentLayout>,
+    children:[
+      {
+        path: "agent-singup",
+        element: <SignUp/> ,
+      },
+    ]
+  }
 ]);
 
 export default router;
