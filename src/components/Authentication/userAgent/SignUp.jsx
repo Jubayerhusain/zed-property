@@ -1,6 +1,8 @@
 import React from "react";
+import { GoArrowLeft } from "react-icons/go";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 import logo from "../../../assets/logo.png";
+import { NavLink } from "react-router-dom";
 
 const SignUp = () => {
   return (
@@ -9,10 +11,10 @@ const SignUp = () => {
       
       <div className="  rounded-t-2xl sm:rounded-t-none sm:rounded-l-2xl bg-[#F8FAFC] p-5 w-full  sm:col-span-3" >
         <div className="">
-          <div className="pb-10">
-         <img src={logo} alt="" className="" />
-        </div>
-         <div className="pb-10">
+          <NavLink to={"/home"} className="">
+         <img src={logo} alt="" />
+        </NavLink>
+         <div className="py-10">
            <h1 className=" text-2xl font-semibold">Become a Proud Agent</h1>
           <h2 className=" text-sm text-[#64748B]">
             Fill out the info and grow your business with us
@@ -83,8 +85,16 @@ const SignUp = () => {
             </h1>
           </div>
         </div>
+         <NavLink to={"/agent-SingIn"} className=' pt-5 flex items-center justify-center gap-2' >
+                                <div>
+                                    <GoArrowLeft></GoArrowLeft>
+                                </div>
+                                <a className='text-sm font-semibold'>
+                                    Back to login
+                                </a>
+                            </NavLink>
       </div>
-      <div className=" w-full sm:col-span-9 px-5 sm:px-20 py-16 rounded-b-2xl sm:rounded-b-none sm:rounded-r-2xl bg-white ">
+      <div className=" w-full sm:col-span-9 px-5 sm:px-20 py-16 rounded-b-2xl sm:rounded-l-none sm:rounded-r-2xl bg-white ">
           <div className=" text-center">
             <h1 className=" text-2xl font-semibold">Primary user details</h1>
             <h2 className=" text-sm py-2 text-[#6B7280]">

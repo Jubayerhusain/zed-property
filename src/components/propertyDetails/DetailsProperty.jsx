@@ -44,7 +44,7 @@ export default function DetailsProperty() {
               />
             </svg>
             <span className="text-sm sm:text-base lg:text-lg">
-              New York, United States
+              Lusaka, Kitwe and Ndola
             </span>
           </div>
         </div>
