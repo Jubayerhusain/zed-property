@@ -34,7 +34,7 @@ const PropertyListing = () => {
       id: 1,
       name: "Manstret Haven",
       price: 425000,
-      location: "New York, United States",
+      location: "Lusaka, Kitwe and Ndola",
       beds: 4,
       baths: 2,
       sqft: 2920,
@@ -47,7 +47,7 @@ const PropertyListing = () => {
       id: 2,
       name: "New Trafford",
       price: 448300,
-      location: "New York, United States",
+      location: "Lusaka, Kitwe and Ndola",
       beds: 4,
       baths: 2,
       sqft: 2882,
@@ -60,7 +60,7 @@ const PropertyListing = () => {
       id: 3,
       name: "Amolet Metric",
       price: 460280,
-      location: "New York, United States",
+      location: "Lusaka, Kitwe and Ndola",
       beds: 4,
       baths: 2,
       sqft: 2824,
@@ -73,7 +73,7 @@ const PropertyListing = () => {
       id: 4,
       name: "Boise Loide",
       price: 420840,
-      location: "New York, United States",
+      location: "Lusaka, Kitwe and Ndola",
       beds: 3,
       baths: 2,
       sqft: 2640,
@@ -86,7 +86,7 @@ const PropertyListing = () => {
       id: 5,
       name: "Timber Place",
       price: 406800,
-      location: "New York, United States",
+      location: "Lusaka, Kitwe and Ndola",
       beds: 3,
       baths: 2,
       sqft: 2465,
@@ -99,7 +99,7 @@ const PropertyListing = () => {
       id: 6,
       name: "Fabulous Estate",
       price: 446896,
-      location: "New York, United States",
+      location: "Lusaka, Kitwe and Ndola",
       beds: 3,
       baths: 2,
       sqft: 2698,
@@ -112,7 +112,7 @@ const PropertyListing = () => {
       id: 7,
       name: "Bended Mate",
       price: 425000,
-      location: "New York, United States",
+      location: "Lusaka, Kitwe and Ndola",
       beds: 4,
       baths: 2,
       sqft: 2480,
@@ -125,7 +125,7 @@ const PropertyListing = () => {
       id: 8,
       name: "Neva Shift",
       price: 448300,
-      location: "New York, United States",
+      location: "Lusaka, Kitwe and Ndola",
       beds: 4,
       baths: 2,
       sqft: 2482,
@@ -138,7 +138,7 @@ const PropertyListing = () => {
       id: 9,
       name: "Ocean Vista",
       price: 520000,
-      location: "New York, United States",
+      location: "Lusaka, Kitwe and Ndola",
       beds: 5,
       baths: 3,
       sqft: 3200,
@@ -151,7 +151,7 @@ const PropertyListing = () => {
       id: 10,
       name: "Urban Loft",
       price: 380000,
-      location: "New York, United States",
+      location: "Lusaka, Kitwe and Ndola",
       beds: 2,
       baths: 2,
       sqft: 1800,
@@ -164,7 +164,7 @@ const PropertyListing = () => {
       id: 11,
       name: "Sunset Manor",
       price: 675000,
-      location: "New York, United States",
+      location: "Lusaka, Kitwe and Ndola",
       beds: 5,
       baths: 4,
       sqft: 3800,
@@ -177,7 +177,7 @@ const PropertyListing = () => {
       id: 12,
       name: "Modern Plaza",
       price: 290000,
-      location: "New York, United States",
+      location: "Lusaka, Kitwe and Ndola",
       beds: 2,
       baths: 1,
       sqft: 1500,
@@ -376,9 +376,16 @@ const PropertyListing = () => {
                   }}
                   className="w-full px-4 py-3 border border-gray-200 rounded-lg appearance-none bg-white cursor-pointer"
                 >
-                  <option>New York, US</option>
-                  <option>Los Angeles, US</option>
-                  <option>Chicago, US</option>
+                  <option>Lusaka</option>
+                  <option>Kitwe</option>
+                  <option>Ndola</option>
+                  <option>hipata</option>
+                  <option>Kabwe</option>
+                  <option>Chingola</option>
+                  <option>Mufulira</option>
+                  <option>Luanshya</option>
+                  <option>Livingstone</option>
+                  <option>Kasama</option>
                 </select>
                 <ChevronDown
                   className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"
