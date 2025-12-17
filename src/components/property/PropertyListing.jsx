@@ -440,7 +440,7 @@ const PropertyListing = () => {
             <div className="bg-white rounded-lg p-6 ">
               <h3 className="text-lg font-semibold mb-4">Price Range</h3>
               <p className="text-sm text-gray-600 mb-4">
-                ${priceRange[0].toLocaleString()} - $
+                ZMW{priceRange[0].toLocaleString()} - ZMW
                 {priceRange[1].toLocaleString()}
               </p>
               <div className="relative pt-1 pb-4">
@@ -709,8 +709,8 @@ const PropertyListing = () => {
                         <h3 className="text-xl font-semibold text-gray-900">
                           {property.name}
                         </h3>
-                        <span className="text-xl font-bold text-gray-900">
-                          ${property.price.toLocaleString()}
+                        <span className="text-xl font-semibold text-gray-800 flex gap-1">
+                         ZMW {property.price.toLocaleString()}
                         </span>
                       </div>
                       <div className="flex items-center text-gray-500 text-sm mb-4">

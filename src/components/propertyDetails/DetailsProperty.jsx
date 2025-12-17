@@ -29,7 +29,7 @@ export default function DetailsProperty() {
         {/* Header */}
         <div className="mb-6 sm:mb-8">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2 sm:mb-3 leading-tight">
-            Manstret Haven / $425,000
+            Manstret Haven / ZMW 425,000
           </h1>
           <div className="flex items-center gap-2 text-gray-600">
             <svg

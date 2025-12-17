@@ -17,7 +17,7 @@ const Footer = () => {
     },
     {
       title: "Contact",
-      links: ["Chat Our Support", "ZedProperty@gmail.com", "+1 814 637 1529"],
+      links: ["Location: Lusaka, Kitwe and Ndola.", "Chat Our Support", "ZedProperty@gmail.com", "+1 814 637 1529"],
     },
   ];
 
@@ -121,7 +121,7 @@ const Footer = () => {
         <div className="mt-10 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-200">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-sm sm:text-base text-gray-600 text-center sm:text-left">
-              © {new Date().getFullYear()} ZedProperty. All rights reserved.
+              © {new Date().getFullYear()} BantuTec. All rights reserved.
             </p>
             <div className="flex items-center gap-4 sm:gap-6">
               <a

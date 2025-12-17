@@ -22,19 +22,23 @@ const ContactForm = () => {
     "Office",
   ];
   const budgetRanges = [
-    "$100k - $250k",
-    "$250k - $500k",
-    "$500k - $1M",
-    "$1M - $2M",
-    "$2M+",
+    "ZMW 100,000 - ZMW 250,000",
+    "ZMW 250,000 - ZMW 500,000",
+    "ZMW 500,000 - ZMW 1,000,000",
+    "ZMW 1,000,000 - ZMW 2,500,00",
+    "ZMW 2,5M+",
   ];
   const locations = [
-    "New York",
-    "Los Angeles",
-    "Chicago",
-    "Miami",
-    "Seattle",
-    "Boston",
+    "Lusaka",
+    "Kitwe",
+    "Ndola",
+    "Chipata",
+    "Kabwe",
+    "Chingola",
+    "Mufulira",
+    "Luanshya",
+    "Livingstone",
+    "Kasama",
   ];
 
   const handleChange = (e) => {

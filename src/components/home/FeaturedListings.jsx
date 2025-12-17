@@ -3,6 +3,7 @@ import { MapPin, Bed, Bath, Maximize } from 'lucide-react';
 import maximize from '../../assets/home-assets/maximize-3.png'
 import solar_bath_linear from '../../assets/home-assets/solar_bath-linear.png'
 import solar_bed_broken from '../../assets/home-assets/solar_bed-broken.png'
+import { Link } from 'react-router-dom';
 
 
 export default function FeaturedListings() {
@@ -87,8 +88,8 @@ export default function FeaturedListings() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {properties.map((property) => (
-            <div 
-              key={property.id} 
+            <Link to={'/property-details/:id'}
+              key={property.id}
               className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               <div className="relative h-64 overflow-hidden">
@@ -125,7 +126,7 @@ export default function FeaturedListings() {
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
