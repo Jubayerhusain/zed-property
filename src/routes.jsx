@@ -17,6 +17,9 @@ import ForgetPassword2 from "./components/Authentication/userAgent/ForgetPasswor
 import JoinAgentLayout from "./layouts/JoinAgentLayout";
 import UserInformation from "./pages/agentAuthPages/UserInformation";
 import BusinessDetails1 from "./pages/agentAuthPages/BusinessDetails1";
+import VarifacationPages from "./pages/agentAuthPages/VarifacationPages";
+import ResendPages from "./pages/agentAuthPages/ResendPages";
+import SetPasswordPages from "./pages/agentAuthPages/SetPasswordPages";
 
 const router = createBrowserRouter([
   {
@@ -100,6 +103,18 @@ const router = createBrowserRouter([
        {
         path: "Business-details",
         element: <BusinessDetails1 /> ,
+      },
+       {
+        path: "varifacation",
+        element: <VarifacationPages /> ,
+      },
+       {
+        path: "resend-it",
+        element: <ResendPages /> ,
+      }, 
+       {
+        path: "set-password",
+        element: <SetPasswordPages /> ,
       },
     
       

@@ -2,14 +2,14 @@ import React from "react";
 import { GoArrowLeft } from "react-icons/go";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 import logo from "../../../assets/logo.png";
-import {  NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-const Information = () => {
+const Varification = () => {
   return (
     <div className=" bg-gray-100 py-0 sm:py-10">
       <div className=" sm:flex w-full px-5 sm:px-0 sm:w-9/12 mx-auto ">
-        <div className="  rounded-t-2xl sm:rounded-t-none sm:rounded-l-2xl bg-[#F8FAFC] p-5 w-full  sm:col-span-3">
-          <div className="">
+        <div className="  rounded-t-2xl  sm:px-0 sm:rounded-t-none sm:rounded-l-2xl bg-[#F8FAFC] py-5 w-full  sm:col-span-3/12">
+          <div className="px-5">
             <NavLink to={"/home"} className="">
               <img src={logo} alt="" />
             </NavLink>
@@ -20,15 +20,15 @@ const Information = () => {
               </h2>
             </div>
           </div>
-          <div className=" grid grid-cols-1 gap-10">
+          <div className=" px-5 grid grid-cols-1 gap-10">
             {/* 1st  */}
             <div>
               <div className="flex gap-2 items-center font-semibold">
                 <div className="font-extrabold text-lg">
-                  <IoCheckmarkCircleOutline className=" font-extrabold text-black text-lg" />
+                  <IoCheckmarkCircleOutline className=" font-extrabold text-green-600 text-lg" />
                 </div>
                 <div>
-                  <h1 className="text-sm  text-[#000000]  font-semibold">
+                  <h1 className="text-sm text-[#000000] font-semibold">
                     User Information
                   </h1>
                 </div>
@@ -41,10 +41,10 @@ const Information = () => {
             <div>
               <div className="flex gap-2 items-center font-semibold">
                 <div className="font-semibold">
-                  <IoCheckmarkCircleOutline className=" font-semibold text-lg text-[#64748B] " />
+                  <IoCheckmarkCircleOutline className=" text-green-600 font-semibold  text-lg  " />
                 </div>
                 <div>
-                  <h1 className=" text-[#64748B] not-first: font-semibold text-sm ">
+                  <h1 className=" text-black font-semibold text-sm ">
                     Business Details
                   </h1>
                 </div>
@@ -56,11 +56,11 @@ const Information = () => {
             {/* 3rd */}
             <div>
               <div className="flex gap-2 items-center font-semibold">
-                <div className="font-extrabold text-black text-lg">
-                  <IoCheckmarkCircleOutline className=" font-extrabold text-[#64748B] text-lg" />
+                <div className="g">
+                  <IoCheckmarkCircleOutline className=" font-extrabold text-black text-lg" />
                 </div>
                 <div>
-                  <h1 className="text-sm text-[#64748B] font-semibold">
+                  <h1 className="text-sm text-black font-semibold">
                     Verification
                   </h1>
                 </div>
@@ -97,75 +97,47 @@ const Information = () => {
             <a className="text-sm font-semibold">Back to login</a>
           </NavLink>
         </div>
-        <div className=" w-full sm:col-span-9 px-5 sm:px-20 py-16 rounded-b-2xl sm:rounded-l-none sm:rounded-r-2xl bg-white ">
+        {/* 2nd section  */}
+        <div className=" w-full sm:col-span-9/12 px-5 sm:px-28 py-48 rounded-b-2xl sm:rounded-l-none sm:rounded-r-2xl bg-white ">
           <div className=" text-center">
-            <h1 className=" text-2xl font-semibold">Primary user details</h1>
-            <h2 className=" text-sm py-2 text-[#6B7280]">
-              Please provide your Primary user details
+            <h1 className=" text-2xl font-semibold">Enter Verification Code</h1>
+            <h2 className=" text-sm pt-2 text-[#6B7280]">
+               We’ve send a code to <a className=" text-black font-semibold" >mail@email.com</a>
             </h2>
           </div>
-          <div className=" pt-5 mx-auto grid grid-cols-1 justify-center ">
+          <div className=" pt-5 pb-7 mx-auto  grid grid-cols-6 gap-4 justify-center ">
             {/* 1st input  */}
-            <div>
-              <h1 className="py-2 text-sm font-medium ">
-                Username <a className=" text-red-600 text-xl">*</a>
-              </h1>
-              <input
-                type="text"
-                placeholder="Enter your user name"
-                className="input border border-gray-100 w-full "
-              />
-            </div>
+            <input type="text" placeholder="" className="input rounded-lg" />
             {/* 2nd input  */}
-            <div>
-              <h1 className="py-2 text-sm font-medium ">
-                First name <a className=" text-red-600 text-xl">*</a>
-              </h1>
-              <input
-                type="text"
-                placeholder="Enter your first name"
-                className="input border border-gray-100 w-full "
-              />
-            </div>
+            <input type="text" placeholder="" className="input rounded-lg" />
             {/* 3rd input  */}
-            <div>
-              <h1 className="py-2 text-sm font-medium ">Last name </h1>
-              <input
-                type="text"
-                placeholder="Enter your last name"
-                className="input border border-gray-100 w-full "
-              />
-            </div>
-            {/* 4th input  */}
-            <div>
-              <h1 className="py-2 text-sm font-medium ">
-                Email <a className=" text-red-600 text-xl">*</a>
-              </h1>
-              <input
-                type="email"
-                placeholder="Companyname@gmail.com"
-                className="input border border-gray-100 w-full "
-              />
-            </div>
+            <input type="text" placeholder="" className="input rounded-lg" />
+            {/* 4th input   */}
+            <input type="text" placeholder="" className="input rounded-lg" />
             {/* 5th input  */}
-            <div>
-              <h1 className="py-2 text-sm font-medium ">
-                Mobile number <a className=" text-red-600 text-xl">*</a>
-              </h1>
-              <input
-                type=""
-                placeholder="Enter your contact number"
-                className="input border border-gray-100 w-full "
-              />
-            </div>
-            <NavLink to={"/join-as-agent/Business-details"} className="rounded-lg py-1 mt-5 text-center text-white bg-gradient-to-t from-green-400 to-lime-300 ">
-              Continue
-            </NavLink>
+            <input type="text" placeholder="" className="input rounded-lg" />
+            {/* 6th input  */}
+            <input type="text" placeholder="" className="input rounded-lg" />
           </div>
+          <NavLink
+            to={"/join-as-agent/set-password"}
+            className="rounded-lg py-2 text-center px-32 sm:px-44 bg-[#E2E8F0] "
+          >
+            Submit
+          </NavLink>
+          <h1 className=" text-center font-medium text-sm gap-1 pt-5">
+            Didn’t receive the code?
+            <NavLink
+              to={"/join-as-agent/resend-it"}
+              className=" underline pl-1"
+            >
+              Resend it
+            </NavLink>
+          </h1>
         </div>
       </div>
     </div>
   );
 };
 
-export default Information;
+export default Varification;
