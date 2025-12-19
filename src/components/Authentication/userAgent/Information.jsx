@@ -6,175 +6,138 @@ import { NavLink } from "react-router-dom";
 
 const Information = () => {
   return (
-    <div className=" h-screen py-5 sm:py-10 sm:mt-8">
-      <div className="h-[80vh] sm:flex w-full px-5 sm:px-0 sm:w-9/12 shadow-md mx-auto sm:rounded-l-2xl  rounded-t-2xl sm:rounded-t-none">
-        <div className=" sm:relative bg-[#F8FAFC] p-5 w-full  sm:col-span-4/9">
-          <div className="">
-            <NavLink to={"/home"} className="">
-              <img src={logo} alt="" />
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-10 px-4">
+      <div className="flex flex-col md:flex-row w-full max-w-6xl bg-white shadow-2xl rounded-2xl overflow-hidden">
+        
+        <div className="w-full md:w-2/5 bg-[#F8FAFC] p-6 sm:p-10 flex flex-col justify-between">
+          <div>
+            <NavLink to="/home">
+              <img src={logo} alt="Logo" className="h-8 w-auto" />
             </NavLink>
-            <div className="py-10">
-              <h1 className=" text-2xl font-semibold">Become a Proud Agent</h1>
-              <h2 className=" text-sm text-[#64748B]">
+
+            <div className="mt-10 mb-12">
+              <h1 className="text-2xl font-bold text-gray-800">Become a Proud Agent</h1>
+              <p className="text-sm text-[#64748B] mt-1">
                 Fill out the info and grow your business with us
-              </h2>
+              </p>
+            </div>
+
+            <div className="space-y-8">
+              <div className="flex gap-4">
+                <IoCheckmarkCircleOutline className="text-black text-xl flex-shrink-0" />
+                <div>
+                  <h3 className="text-sm font-bold text-gray-900">User Information</h3>
+                  <p className="text-[12px] text-[#64748B]">Enter your basic details to get started</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 opacity-50">
+                <IoCheckmarkCircleOutline className="text-gray-400 text-xl flex-shrink-0" />
+                <div>
+                  <h3 className="text-sm font-bold text-gray-600">Business Details</h3>
+                  <p className="text-[12px] text-gray-600">Add your company and service information</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 opacity-50">
+                <IoCheckmarkCircleOutline className="text-gray-400 text-xl flex-shrink-0" />
+                <div>
+                  <h3 className="text-sm font-bold text-gray-600">Verification</h3>
+                  <p className="text-[12px] text-gray-600">Review and profile activation</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 opacity-50">
+                <IoCheckmarkCircleOutline className="text-gray-400 text-xl flex-shrink-0" />
+                <div>
+                  <h3 className="text-sm font-bold text-gray-600">Set Password</h3>
+                  <p className="text-[12px] text-gray-600">Secure your agent account</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div className=" grid grid-cols-1 gap-10">
-            {/* 1st  */}
-            <div>
-              <div className="flex gap-2 items-center font-semibold">
-                <div className="font-extrabold text-lg">
-                  <IoCheckmarkCircleOutline className=" font-extrabold text-black text-lg" />
-                </div>
-                <div>
-                  <h1 className="text-sm  text-[#000000]  font-semibold">
-                    User Information
-                  </h1>
-                </div>
-              </div>
-              <h1 className="text-[#64748B] text-[12px] font-medium">
-                Enter your basic details to get started
-              </h1>
-            </div>
-            {/* 2nd  */}
-            <div>
-              <div className="flex gap-2 items-center font-semibold">
-                <div className="font-semibold">
-                  <IoCheckmarkCircleOutline className=" font-semibold text-lg text-[#64748B] " />
-                </div>
-                <div>
-                  <h1 className=" text-[#64748B] not-first: font-semibold text-sm ">
-                    Business Details
-                  </h1>
-                </div>
-              </div>
-              <h1 className="text-[#64748B] font-medium text-[12px]">
-                Add your company and service information for your profile
-              </h1>
-            </div>
-            {/* 3rd */}
-            <div>
-              <div className="flex gap-2 items-center font-semibold">
-                <div className="font-extrabold text-black text-lg">
-                  <IoCheckmarkCircleOutline className=" font-extrabold text-[#64748B] text-lg" />
-                </div>
-                <div>
-                  <h1 className="text-sm text-[#64748B] font-semibold">
-                    Verification
-                  </h1>
-                </div>
-              </div>
-              <h1 className="text-[#64748B] text-[12px] font-medium">
-                We’ll review your details and activate your profile once
-                verified
-              </h1>
-            </div>
-            {/* 4th */}
-            <div>
-              <div className="flex gap-2 items-center font-semibold">
-                <div className="font-extrabold text-gray-600 text-lg">
-                  <IoCheckmarkCircleOutline className=" font-extrabold text-gray-600 text-lg" />
-                </div>
-                <div>
-                  <h1 className="text-sm text-[#64748B] font-semibold">
-                    Set Password
-                  </h1>
-                </div>
-              </div>
-              <h1 className="text-[#64748B] text-[12px] font-medium">
-                Create a secure password to access your account
-              </h1>
-            </div>
-          </div>
-          <NavLink
-            to={"/agent-SingIn"}
-            className=" bottom-5 hidden sm:block absolute justify-center gap-2"
-          >
-            <div className="flex items-center gap-2">
-              <GoArrowLeft></GoArrowLeft>
-              <p className="text-sm font-semibold">Back to login</p>
-            </div>
+
+          <NavLink to="/agent-SingIn" className="hidden md:flex items-center gap-2 text-gray-700 hover:text-black mt-10">
+            <GoArrowLeft />
+            <span className="text-sm font-bold">Back to login</span>
           </NavLink>
         </div>
-        <div className=" w-full sm:col-span-6/9 relative px-5 py-10 sm:px-28 sm:py-28 rounded-b-2xl sm:rounded-l-none sm:rounded-r-2xl bg-white">
-          <div className=" text-center">
-            <h1 className=" text-2xl font-semibold">Primary user details</h1>
-            <h2 className=" text-sm py-2 text-[#6B7280]">
-              Please provide your Primary user details
-            </h2>
+
+        <div className="w-full md:w-3/5 p-6 sm:p-12 lg:p-20 flex flex-col justify-center">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl font-bold text-gray-800">Primary user details</h2>
+            <p className="text-sm text-gray-500 mt-1">Please provide your Primary user details</p>
           </div>
-          <div className=" pt-5 mx-auto grid grid-cols-1 justify-center ">
-            {/* 1st input  */}
+
+          <div className="space-y-5 max-w-md mx-auto w-full">
             <div>
-              <h1 className="py-2 text-sm font-medium ">
-                Username <a className=" text-red-600 text-xl">*</a>
-              </h1>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Username <span className="text-red-600 font-bold">*</span>
+              </label>
               <input
                 type="text"
                 placeholder="Enter your user name"
-                className="input border border-gray-100 w-full "
+                className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none"
               />
             </div>
-            {/* 2nd input  */}
-            <div>
-              <h1 className="py-2 text-sm font-medium ">
-                First name <a className=" text-red-600 text-xl">*</a>
-              </h1>
-              <input
-                type="text"
-                placeholder="Enter your first name"
-                className="input border border-gray-100 w-full "
-              />
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  First name <span className="text-red-600 font-bold">*</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="First name"
+                  className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Last name</label>
+                <input
+                  type="text"
+                  placeholder="Last name"
+                  className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none"
+                />
+              </div>
             </div>
-            {/* 3rd input  */}
+
             <div>
-              <h1 className="py-2 text-sm font-medium ">Last name </h1>
-              <input
-                type="text"
-                placeholder="Enter your last name"
-                className="input border border-gray-100 w-full "
-              />
-            </div>
-            {/* 4th input  */}
-            <div>
-              <h1 className="py-2 text-sm font-medium ">
-                Email <a className=" text-red-600 text-xl">*</a>
-              </h1>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Email <span className="text-red-600 font-bold">*</span>
+              </label>
               <input
                 type="email"
                 placeholder="Companyname@gmail.com"
-                className="input border border-gray-100 w-full "
+                className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none"
               />
             </div>
-            {/* 5th input  */}
+
             <div>
-              <h1 className="py-2 text-sm font-medium ">
-                Mobile number <a className=" text-red-600 text-xl">*</a>
-              </h1>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Mobile number <span className="text-red-600 font-bold">*</span>
+              </label>
               <input
-                type=""
+                type="tel"
                 placeholder="Enter your contact number"
-                className="input border border-gray-100 w-full "
+                className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none"
               />
             </div>
+
             <NavLink
-              to={"/join-as-agent/Business-details"}
-              className="rounded-lg py-3 mt-5 text-center text-white bg-gradient-to-t from-green-400 to-lime-300 "
+              to="/join-as-agent/Business-details"
+              className="block w-full py-3.5 text-center text-white font-bold rounded-xl bg-gradient-to-r from-green-400 to-lime-400 shadow-lg hover:opacity-90 transition-opacity mt-8"
             >
               Continue
             </NavLink>
-            <NavLink
-              to={"/agent-SingIn"}
-              className=" relative text-b-5 sm:hidden block mt-5 flex items-center justify-center gap-2"
-            >
-              <div>
-                <GoArrowLeft></GoArrowLeft>
-              </div>
-              <span className="text-sm  font-semibold">Back to login</span>
+
+            <NavLink to="/agent-SingIn" className="flex md:hidden items-center justify-center gap-2 mt-6 text-gray-600 font-bold text-sm">
+              <GoArrowLeft />
+              <span>Back to login</span>
             </NavLink>
           </div>
         </div>
+
       </div>
     </div>
   );

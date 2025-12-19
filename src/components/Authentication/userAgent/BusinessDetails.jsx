@@ -6,178 +6,132 @@ import { NavLink } from "react-router-dom";
 
 const BusinessDetails = () => {
   return (
-    <div>
-    <div className=" h-screen py-5 sm:py-10 sm:mt-8">
-      <div className="h-[80vh] sm:flex w-full px-5 sm:px-0 sm:w-9/12 shadow-md mx-auto sm:rounded-l-2xl  rounded-t-2xl sm:rounded-t-none">
-          <div className=" relative rounded-t-2xl sm:rounded-t-none sm:rounded-l-2xl bg-[#F8FAFC] p-5 w-full  sm:w-4/9">
-            <div className="">
-              <NavLink to={"/home"} className="">
-                <img src={logo} alt="" />
-              </NavLink>
-              <div className="py-10">
-                <h1 className=" text-2xl font-semibold">
-                  Become a Proud Agent
-                </h1>
-                <h2 className=" text-sm text-[#64748B]">
-                  Fill out the info and grow your business with us
-                </h2>
-              </div>
-            </div>
-            <div className=" grid grid-cols-1 gap-10">
-              {/* 1st  */}
-              <div>
-                <div className="flex gap-2 items-center font-semibold">
-                  <div className="font-extrabold text-lg">
-                    <IoCheckmarkCircleOutline className=" font-extrabold text-green-600 text-lg" />
-                  </div>
-                  <div>
-                    <h1 className="text-sm text-[#000000] font-semibold">
-                      User Information
-                    </h1>
-                  </div>
-                </div>
-                <h1 className="text-[#64748B] text-[12px] font-medium">
-                  Enter your basic details to get started
-                </h1>
-              </div>
-              {/* 2nd  */}
-              <div>
-                <div className="flex gap-2 items-center font-semibold">
-                  <div className="font-semibold">
-                    <IoCheckmarkCircleOutline className=" text-black font-semibold  text-lg  " />
-                  </div>
-                  <div>
-                    <h1 className="text-black font-semibold text-sm ">
-                      Business Details
-                    </h1>
-                  </div>
-                </div>
-                <h1 className="text-[#64748B] font-medium text-[12px]">
-                  Add your company and service information for your profile
-                </h1>
-              </div>
-              {/* 3rd */}
-              <div>
-                <div className="flex gap-2 items-center font-semibold">
-                  <div className="font-extrabold text-black text-lg">
-                    <IoCheckmarkCircleOutline className=" font-extrabold text-[#64748B] text-lg" />
-                  </div>
-                  <div>
-                    <h1 className="text-sm text-[#64748B] font-semibold">
-                      Verification
-                    </h1>
-                  </div>
-                </div>
-                <h1 className="text-[#64748B] text-[12px] font-medium">
-                  We’ll review your details and activate your profile once
-                  verified
-                </h1>
-              </div>
-              {/* 4th */}
-              <div>
-                <div className="flex gap-2 items-center font-semibold">
-                  <div className="font-extrabold text-gray-600 text-lg">
-                    <IoCheckmarkCircleOutline className=" font-extrabold text-gray-600 text-lg" />
-                  </div>
-                  <div>
-                    <h1 className="text-sm text-[#64748B] font-semibold">
-                      Set Password
-                    </h1>
-                  </div>
-                </div>
-                <h1 className="text-[#64748B] text-[12px] font-medium">
-                  Create a secure password to access your account
-                </h1>
-              </div>
-            </div>
-            <NavLink
-              to={"/agent-SingIn"}
-              className=" text-b-5 hidden  sm:block absolute bottom-5 flex-row items-center justify-center gap-2"
-            >
-              {/* <div>
-                <GoArrowLeft></GoArrowLeft>
-              </div> */}
-              <p className="text-sm  font-semibold">← Back to login</p>
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-10 px-4">
+      <div className="flex flex-col md:flex-row w-full max-w-6xl bg-white shadow-2xl rounded-2xl overflow-hidden">
+        
+        <div className="w-full md:w-2/5 bg-[#F8FAFC] p-6 sm:p-10 flex flex-col justify-between">
+          <div>
+            <NavLink to="/home">
+              <img src={logo} alt="Logo" className="h-8 w-auto" />
             </NavLink>
-          </div>
-          {/* 2nd section  */}
-          <div className=" w-full sm:w-6/9 px-5 sm:px-28 py-28 rounded-b-2xl sm:rounded-l-none sm:rounded-r-2xl bg-white ">
-            <div className=" text-center">
-              <h1 className=" text-2xl font-semibold">Your business details</h1>
-              <h2 className=" text-sm py-2 text-[#6B7280]">
-                Please provide your business details
-              </h2>
+
+            <div className="mt-10 mb-12">
+              <h1 className="text-2xl font-bold text-gray-800">Become a Proud Agent</h1>
+              <p className="text-sm text-[#64748B] mt-1">
+                Fill out the info and grow your business with us
+              </p>
             </div>
-            <div className=" pt-5 mx-auto grid grid-cols-1 justify-center ">
-              {/* 1st input  */}
-              <div>
-                <h1 className="py-2 text-sm font-medium ">
-                  Position <a className=" text-red-600 text-xl">*</a>
-                </h1>
-                <select
-                  defaultValue="Pick a color"
-                  className="select border-gray-100 w-full"
-                >
-                  <option disabled={true}>Agent</option>
-                  <option>Crimson</option>
-                  <option>Amber</option>
-                  <option>Velvet</option>
-                </select>
+
+            <div className="space-y-8">
+              <div className="flex gap-4">
+                <IoCheckmarkCircleOutline className="text-green-600 text-xl flex-shrink-0" />
+                <div>
+                  <h3 className="text-sm font-bold text-gray-900">User Information</h3>
+                  <p className="text-[12px] text-[#64748B]">Enter your basic details to get started</p>
+                </div>
               </div>
-              {/* 2nd input  */}
-              <div>
-                <h1 className="py-2 text-sm font-medium ">
-                  Websit <a className=" text-red-600 text-xl">*</a>
-                </h1>
+
+              <div className="flex gap-4">
+                <IoCheckmarkCircleOutline className="text-black text-xl flex-shrink-0" />
+                <div>
+                  <h3 className="text-sm font-bold text-black">Business Details</h3>
+                  <p className="text-[12px] text-[#64748B]">Add your company and service information</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 opacity-50">
+                <IoCheckmarkCircleOutline className="text-gray-400 text-xl flex-shrink-0" />
+                <div>
+                  <h3 className="text-sm font-bold text-gray-600">Verification</h3>
+                  <p className="text-[12px] text-gray-600">Review and profile activation</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 opacity-50">
+                <IoCheckmarkCircleOutline className="text-gray-400 text-xl flex-shrink-0" />
+                <div>
+                  <h3 className="text-sm font-bold text-gray-600">Set Password</h3>
+                  <p className="text-[12px] text-gray-600">Secure your agent account</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <NavLink to="/agent-SingIn" className="hidden md:flex items-center gap-2 text-gray-700 hover:text-black transition-colors">
+            <span className="text-sm font-bold">← Back to login</span>
+          </NavLink>
+        </div>
+
+        <div className="w-full md:w-3/5 p-6 sm:p-12 lg:p-20">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl font-bold text-gray-800">Your business details</h2>
+            <p className="text-sm text-gray-500 mt-1">Please provide your business details</p>
+          </div>
+
+          <div className="space-y-5">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Position <span className="text-red-600 font-bold">*</span>
+              </label>
+              <select className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none bg-white">
+                <option disabled value="">Select position</option>
+                <option>Agent</option>
+                <option>Crimson</option>
+                <option>Amber</option>
+                <option>Velvet</option>
+              </select>
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Website <span className="text-red-600 font-bold">*</span>
+              </label>
+              <input
+                type="url"
+                placeholder="www.wesbsitename.com"
+                className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Social media</label>
+              <div className="flex flex-col sm:flex-row gap-2">
                 <input
-                  type="url"
-                  placeholder="www.wesbsitename.com"
-                  className="input border border-gray-100 w-full "
-                />
-              </div>
-              {/* 3rd input  */}
-              <div className="" >
-                <h1 className="py-2 text-sm font-medium ">Social media </h1>
-                <div className="flex gap-2" >
-                   <input
                   type="url"
                   placeholder="https://www.facebook.com/username"
-                  className="input border border-gray-100 w-full "
+                  className="flex-grow px-4 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none"
                 />
-                <button className="btn">
-                  Add more link
+                <button className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-xs font-bold hover:bg-gray-200 transition-colors">
+                  Add more
                 </button>
-                </div>
               </div>
-              {/* 4th input   */}
-              <div className="">
-                <h1 className="py-2 text-sm font-medium ">About <a className=" text-red-600 text-xl">*</a> </h1>
-                <input
-                  type="url"
-                  placeholder="I’am working for the last 4 years as a web designer, 
-                
-                   graphics designer and well as UI/UX designer.........."
-                  className="input border border-gray-100 pb-20 pt-5 w-full "
-                />
-              </div>
-                 <NavLink
-                to={"/join-as-agent/varifacation"}
-                className="rounded-lg py-3 text-center mt-5 w-full text-white bg-gradient-to-t from-green-400 to-lime-300 "
-              >
-                Continue
-              </NavLink>
-                <NavLink
-              to={"/agent-SingIn"}
-              className=" text-b-5 sm:hidden block mt-5 flex items-center justify-center gap-2"
-            >
-              <div>
-                <GoArrowLeft></GoArrowLeft>
-              </div>
-              <span className="text-sm  font-semibold">Back to login</span>
-            </NavLink>
             </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                About <span className="text-red-600 font-bold">*</span>
+              </label>
+              <textarea
+                placeholder="Briefly describe your experience and services..."
+                rows="4"
+                className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none resize-none"
+              ></textarea>
+            </div>
+
+            <NavLink
+              to="/join-as-agent/varifacation"
+              className="block w-full py-3.5 text-center text-white font-bold rounded-xl bg-gradient-to-r from-green-400 to-lime-400 shadow-lg hover:opacity-90 transition-opacity mt-8"
+            >
+              Continue
+            </NavLink>
+
+            <NavLink to="/agent-SingIn" className="flex md:hidden items-center justify-center gap-2 mt-6 text-gray-600 font-bold text-sm">
+              <GoArrowLeft />
+              <span>Back to login</span>
+            </NavLink>
           </div>
         </div>
+
       </div>
     </div>
   );

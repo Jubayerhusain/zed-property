@@ -6,141 +6,123 @@ import { NavLink } from "react-router-dom";
 
 const SetPassword = () => {
   return (
-    <div className=" h-screen py-5 sm:py-10 sm:mt-8">
-      <div className="h-[80vh] sm:flex w-full px-5 sm:px-0 sm:w-9/12 shadow-md mx-auto sm:rounded-l-2xl  rounded-t-2xl sm:rounded-t-none">
-        {/* 1st section  */}
-        <div className="relative bg-[#F8FAFC] py-5 w-full  sm:col-span-4/9">
-          <div className="px-5">
-            <NavLink to={"/home"} className="">
-              <img src={logo} alt="" />
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-10 px-4">
+      <div className="flex flex-col md:flex-row w-full max-w-6xl bg-white shadow-2xl rounded-2xl overflow-hidden">
+        
+        {/* Sidebar - Step Indicator */}
+        <div className="w-full md:w-2/5 bg-[#F8FAFC] p-6 sm:p-10 flex flex-col justify-between">
+          <div>
+            <NavLink to="/home">
+              <img src={logo} alt="Logo" className="h-8 w-auto" />
             </NavLink>
-            <div className="py-10">
-              <h1 className=" text-2xl font-semibold">Become a Proud Agent</h1>
-              <h2 className=" text-sm text-[#64748B]">
+
+            <div className="mt-10 mb-12">
+              <h1 className="text-2xl font-bold text-gray-800">Become a Proud Agent</h1>
+              <p className="text-sm text-[#64748B] mt-1">
                 Fill out the info and grow your business with us
-              </h2>
+              </p>
+            </div>
+
+            <div className="space-y-8">
+              {/* Step 1: Completed */}
+              <div className="flex gap-4">
+                <IoCheckmarkCircleOutline className="text-green-600 text-xl flex-shrink-0" />
+                <div>
+                  <h3 className="text-sm font-bold text-gray-900">User Information</h3>
+                  <p className="text-[12px] text-[#64748B]">Enter your basic details to get started</p>
+                </div>
+              </div>
+
+              {/* Step 2: Completed */}
+              <div className="flex gap-4">
+                <IoCheckmarkCircleOutline className="text-green-600 text-xl flex-shrink-0" />
+                <div>
+                  <h3 className="text-sm font-bold text-gray-900">Business Details</h3>
+                  <p className="text-[12px] text-[#64748B]">Add your company and service information</p>
+                </div>
+              </div>
+
+              {/* Step 3: Completed */}
+              <div className="flex gap-4">
+                <IoCheckmarkCircleOutline className="text-green-600 text-xl flex-shrink-0" />
+                <div>
+                  <h3 className="text-sm font-bold text-gray-900">Verification</h3>
+                  <p className="text-[12px] text-[#64748B]">Review and profile activation</p>
+                </div>
+              </div>
+
+              {/* Step 4: Current */}
+              <div className="flex gap-4">
+                <IoCheckmarkCircleOutline className="text-black text-xl flex-shrink-0" />
+                <div>
+                  <h3 className="text-sm font-bold text-black">Set Password</h3>
+                  <p className="text-[12px] text-[#64748B]">Secure your agent account</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div className=" px-5 grid grid-cols-1 gap-10">
-            {/* 1st  */}
-            <div>
-              <div className="flex gap-2 items-center font-semibold">
-                <div className="font-extrabold text-lg">
-                  <IoCheckmarkCircleOutline className=" font-extrabold text-green-600 text-lg" />
-                </div>
-                <div>
-                  <h1 className="text-sm text-[#000000] font-semibold">
-                    User Information
-                  </h1>
-                </div>
-              </div>
-              <h1 className="text-[#64748B] text-[12px] font-medium">
-                Enter your basic details to get started
-              </h1>
-            </div>
-            {/* 2nd  */}
-            <div>
-              <div className="flex gap-2 items-center font-semibold">
-                <div className="font-semibold">
-                  <IoCheckmarkCircleOutline className=" text-green-600 font-semibold  text-lg  " />
-                </div>
-                <div>
-                  <h1 className=" text-black font-semibold text-sm ">
-                    Business Details
-                  </h1>
-                </div>
-              </div>
-              <h1 className="text-[#64748B] font-medium text-[12px]">
-                Add your company and service information for your profile
-              </h1>
-            </div>
-            {/* 3rd */}
-            <div>
-              <div className="flex gap-2 items-center font-semibold">
-                <div className="g">
-                  <IoCheckmarkCircleOutline className=" font-extrabold text-green-600 text-lg" />
-                </div>
-                <div>
-                  <h1 className="text-sm text-black font-semibold">
-                    Verification
-                  </h1>
-                </div>
-              </div>
-              <h1 className="text-[#64748B] text-[12px] font-medium">
-                We’ll review your details and activate your profile once
-                verified
-              </h1>
-            </div>
-            {/* 4th */}
-            <div>
-              <div className="flex gap-2 items-center font-semibold">
-                <div className="font-extrabold text-gray-600 text-lg">
-                  <IoCheckmarkCircleOutline className=" font-extrabold text-gray-600 text-lg" />
-                </div>
-                <div>
-                  <h1 className="text-sm text-[#64748B] font-semibold">
-                    Set Password
-                  </h1>
-                </div>
-              </div>
-              <h1 className="text-[#64748B] text-[12px] font-medium">
-                Create a secure password to access your account
-              </h1>
-            </div>
-          </div>
-          <NavLink
-            to={"/agent-SingIn"}
-            className=" bottom-5 px-5 hidden sm:block absolute   justify-center "
-          >
-            <div className=" flex items-center gap-2">
-              <GoArrowLeft></GoArrowLeft>
-              <p className="text-sm font-semibold">Back to login</p>
-            </div>
+
+          <NavLink to="/agent-SingIn" className="hidden md:flex items-center gap-2 text-gray-700 hover:text-black mt-10">
+            <GoArrowLeft />
+            <span className="text-sm font-bold">Back to login</span>
           </NavLink>
         </div>
-        {/* 2nd section  */}
-        <div className=" relative w-full sm:col-span-6/9 px-5 pt-10  sm:px-28 sm:p-36  rounded-b-2xl sm:rounded-l-none sm:rounded-r-2xl bg-white ">
-          <div className=" text-center">
-            <h1 className=" text-2xl font-semibold">Set password</h1>
-            <h2 className=" text-sm pt-2 text-[#6B7280]">
+
+        {/* Main Form Section */}
+        <div className="w-full md:w-3/5 p-6 sm:p-12 lg:p-24 flex flex-col justify-center">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl font-bold text-gray-800">Set password</h2>
+            <p className="text-sm text-gray-500 mt-2">
               Must be at least 8 characters
-            </h2>
+            </p>
           </div>
-          <div className=" pt-5 pb-7 mx-auto  grid grid-cols-1 gap-4 justify-center ">
-            {/* 1st input  */}
+
+          <div className="max-w-md mx-auto w-full space-y-6">
             <div>
-              <h1 className="py-2">Please set your password</h1>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Please set your password
+              </label>
               <input
                 type="password"
                 placeholder="Password"
-                className="input w-full  rounded-lg"
+                className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none"
               />
             </div>
+
             <div>
-              <h1 className="py-2">Confirm password</h1>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Confirm password
+              </label>
               <input
                 type="password"
                 placeholder="Re-enter password"
-                className="input w-full rounded-lg"
+                className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none"
               />
             </div>
-            <NavLink
-              to={"/varifacation"}
-              className="rounded-lg py-4 text-center w-full text-white bg-gradient-to-t from-green-400 to-lime-300 "
+
+            <button
+              className="block w-full py-3.5 text-center text-white font-bold rounded-xl bg-gradient-to-r from-green-400 to-lime-400 shadow-lg hover:opacity-90 transition-opacity mt-8"
             >
               Submit
-            </NavLink>
-            <div className=" text-center font-medium text-sm gap-1 pt-5">
-              Didn’t receive the code?
-              <NavLink
-                to={"/join-as-agent/resend-it"}
-                className=" underline pl-1"
-              >
-                Resend it
-              </NavLink>
+            </button>
+
+            <div className="mt-6 text-center">
+              <p className="text-sm text-gray-600">
+                Didn’t receive the code? 
+                <NavLink to="/join-as-agent/resend-it" className="text-black font-bold underline ml-1 hover:text-green-600 transition-colors">
+                  Resend it
+                </NavLink>
+              </p>
             </div>
+
+            {/* Mobile Back Button */}
+            <NavLink to="/agent-SingIn" className="flex md:hidden items-center justify-center gap-2 mt-8 text-gray-600 font-bold text-sm">
+              <GoArrowLeft />
+              <span>Back to login</span>
+            </NavLink>
           </div>
         </div>
+
       </div>
     </div>
   );
