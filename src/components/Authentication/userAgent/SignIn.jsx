@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const SignIn = () => {
     return (
-       <div className="sm:bg-gray-200 bg-white py-0 sm:py-10 " >
+       <div className="sm:bg-gray-400 bg-white py-0 sm:py-10 " >
            <div className="w-full sm:w-9/12  mx-auto">
             <div className=" shadow-xl  rounded-2xl flex flex-col-reverse sm:flex-row   mx-auto ">
               <div className="w-full p-5 sm:p-0 sm:w-4/8 rounded-xl sm:rounded-r-none ">

@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 const ForgetPassword2 = () => {
     return (
-        <div className="bg-gray-200 sm:py-20 p-5 " >
+        <div className="bg-gray-400 sm:py-20 p-5 " >
              <div className="w-full sm:w-9/12  mx-auto">
               <div className=" shadow-xl  rounded-2xl flex flex-col-reverse sm:flex-row   mx-auto ">
                 <div className="w-full pt-5 sm:p-0 sm:w-4/8 rounded-xl sm:rounded-r-none ">
