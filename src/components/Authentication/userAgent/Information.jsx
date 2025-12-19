@@ -2,13 +2,14 @@ import React from "react";
 import { GoArrowLeft } from "react-icons/go";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 import logo from "../../../assets/logo.png";
-import {  NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Information = () => {
   return (
-    <div className=" bg-gray-100 py-0 sm:py-10">
-      <div className=" sm:flex w-full px-5 sm:px-0 sm:w-9/12 mx-auto ">
-        <div className="  rounded-t-2xl sm:rounded-t-none sm:rounded-l-2xl bg-[#F8FAFC] p-5 w-full  sm:col-span-3">
+    <div className=" bg-gray-400 py-5 sm:py-10">
+      this is infor
+      <div className=" sm:flex w-full px-5 sm:px-0 sm:w-9/12  mx-auto ">
+        <div className="  rounded-t-2xl sm:rounded-t-none sm:relative sm:rounded-l-2xl bg-[#F8FAFC] p-5 w-full  sm:col-span-4/9">
           <div className="">
             <NavLink to={"/home"} className="">
               <img src={logo} alt="" />
@@ -89,15 +90,15 @@ const Information = () => {
           </div>
           <NavLink
             to={"/agent-SingIn"}
-            className=" text-b-5 flex items-center justify-center gap-2"
+            className=" bottom-5 hidden sm:block absolute justify-center gap-2"
           >
-            <div>
+            <div className="flex items-center gap-2">
               <GoArrowLeft></GoArrowLeft>
+              <p className="text-sm font-semibold">Back to login</p>
             </div>
-            <a className="text-sm font-semibold">Back to login</a>
           </NavLink>
         </div>
-        <div className=" w-full sm:col-span-9 px-5 sm:px-20 py-16 rounded-b-2xl sm:rounded-l-none sm:rounded-r-2xl bg-white ">
+        <div className=" w-full sm:col-span-6/9 relative px-5 py-10 sm:px-28 sm:py-28 rounded-b-2xl sm:rounded-l-none sm:rounded-r-2xl bg-white ">
           <div className=" text-center">
             <h1 className=" text-2xl font-semibold">Primary user details</h1>
             <h2 className=" text-sm py-2 text-[#6B7280]">
@@ -158,8 +159,20 @@ const Information = () => {
                 className="input border border-gray-100 w-full "
               />
             </div>
-            <NavLink to={"/join-as-agent/Business-details"} className="rounded-lg py-1 mt-5 text-center text-white bg-gradient-to-t from-green-400 to-lime-300 ">
+            <NavLink
+              to={"/join-as-agent/Business-details"}
+              className="rounded-lg py-1 mt-5 text-center text-white bg-gradient-to-t from-green-400 to-lime-300 "
+            >
               Continue
+            </NavLink>
+            <NavLink
+              to={"/agent-SingIn"}
+              className=" relative text-b-5 sm:hidden block mt-5 flex items-center justify-center gap-2"
+            >
+              <div>
+                <GoArrowLeft></GoArrowLeft>
+              </div>
+              <span className="text-sm  font-semibold">Back to login</span>
             </NavLink>
           </div>
         </div>
