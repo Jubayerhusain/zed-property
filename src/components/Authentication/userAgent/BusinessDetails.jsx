@@ -7,9 +7,9 @@ import { NavLink } from "react-router-dom";
 const BusinessDetails = () => {
   return (
     <div>
-      <div className=" bg-gray-100 py-0 sm:py-10">
-        <div className=" sm:flex w-full px-5 sm:px-0 sm:w-9/12 mx-auto ">
-          <div className="  rounded-t-2xl sm:rounded-t-none sm:rounded-l-2xl bg-[#F8FAFC] p-5 w-full  sm:col-span-3/12">
+      <div className=" bg-gray-400 py-5 sm:py-10">
+        <div className=" sm:flex w-full px-5 sm:px-0 sm:w-9/12 h-main-screen mx-auto ">
+          <div className=" relative rounded-t-2xl sm:rounded-t-none sm:rounded-l-2xl bg-[#F8FAFC] p-5 w-full  sm:w-4/9">
             <div className="">
               <NavLink to={"/home"} className="">
                 <img src={logo} alt="" />
@@ -92,15 +92,16 @@ const BusinessDetails = () => {
             </div>
             <NavLink
               to={"/agent-SingIn"}
-              className=" text-b-5 flex items-center justify-center gap-2"
+              className=" text-b-5 hidden  sm:block absolute bottom-5 flex-row items-center justify-center gap-2"
             >
-              <div>
+              {/* <div>
                 <GoArrowLeft></GoArrowLeft>
-              </div>
-              <a className="text-sm font-semibold">Back to login</a>
+              </div> */}
+              <p className="text-sm  font-semibold">← Back to login</p>
             </NavLink>
           </div>
-          <div className=" w-full sm:col-span-9/12 px-5 sm:px-20 py-16 rounded-b-2xl sm:rounded-l-none sm:rounded-r-2xl bg-white ">
+          {/* 2nd section  */}
+          <div className=" w-full sm:w-6/9 px-5 sm:px-28 py-28 rounded-b-2xl sm:rounded-l-none sm:rounded-r-2xl bg-white ">
             <div className=" text-center">
               <h1 className=" text-2xl font-semibold">Your business details</h1>
               <h2 className=" text-sm py-2 text-[#6B7280]">
@@ -159,14 +160,21 @@ const BusinessDetails = () => {
                   className="input border border-gray-100 pb-20 pt-5 w-full "
                 />
               </div>
-                {/* <div className="w-full "> */}
-                <NavLink
+                 <NavLink
                 to={"/join-as-agent/varifacation"}
                 className="rounded-lg py-1 text-center mt-5 w-full text-white bg-gradient-to-t from-green-400 to-lime-300 "
               >
                 Continue
               </NavLink>
-                {/* </div> */}
+                <NavLink
+              to={"/agent-SingIn"}
+              className=" text-b-5 sm:hidden block mt-5 flex items-center justify-center gap-2"
+            >
+              <div>
+                <GoArrowLeft></GoArrowLeft>
+              </div>
+              <span className="text-sm  font-semibold">Back to login</span>
+            </NavLink>
             </div>
           </div>
         </div>

@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 const ResendIt = () => {
   return (
     <div>
-      <div className=" bg-gray-100 py-0 sm:py-10">
+      <div className=" bg-gray-400 py-0 sm:py-10">
         <div className=" sm:flex w-full px-5 sm:px-0 sm:w-9/12 mx-auto ">
           <div className="  rounded-t-2xl  sm:px-0 sm:rounded-t-none sm:rounded-l-2xl bg-[#F8FAFC] py-5 w-full  sm:col-span-3">
             <div className="px-5">
