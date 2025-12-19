@@ -34,7 +34,7 @@ const router = createBrowserRouter([
         path: "/home",
         element: <Home />,
       },
-       {
+      {
         path: "property",
         element: <Property />,
       },
@@ -66,61 +66,57 @@ const router = createBrowserRouter([
         path: "property-details/:id",
         element: <PropertyDetails />,
       },
-      //  user authentication routes 
-        {
+      //  user authentication routes
+      {
         path: "user-login",
-        element: <UserLogin /> ,
+        element: <UserLogin />,
       },
-        {
+      {
         path: "user-registation",
-        element: <UserRegistation/> ,
-      }, 
-       {
+        element: <UserRegistation />,
+      },
+      {
         path: "user-forgetPassword",
-        element: <UserForgetPassword/> ,
+        element: <UserForgetPassword />,
       },
-      // user-agent 
-       {
+      // user-agent
+      {
         path: "agent-SingIn",
-        element: <SignIn/> ,
+        element: <SignIn />,
       },
-       
-       {
+
+      {
         path: "agent-forget-password",
-        element: <ForgetPassword2/> ,
-      }
-      
+        element: <ForgetPassword2 />,
+      },
     ],
   },
   {
-    path:"join-as-agent",
-    element: <JoinAgentLayout></JoinAgentLayout>,
-    children:[
+    path: "join-as-agent",
+    element: <JoinAgentLayout />,
+    children: [
       {
         path: "user-information",
-        element: <UserInformation /> ,
+        element: <UserInformation />,
       },
-       {
+      {
         path: "Business-details",
-        element: <BusinessDetails1 /> ,
+        element: <BusinessDetails1 />,
       },
-       {
+      {
         path: "varifacation",
-        element: <VarifacationPages /> ,
+        element: <VarifacationPages />,
       },
-       {
+      {
         path: "resend-it",
-        element: <ResendPages /> ,
-      }, 
-       {
-        path: "set-password",
-        element: <SetPasswordPages /> ,
+        element: <ResendPages />,
       },
-    
-      
-      
-    ]
-  }
+      {
+        path: "set-password",
+        element: <SetPasswordPages />,
+      },
+    ],
+  },
 ]);
 
 export default router;

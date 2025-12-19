@@ -6,11 +6,10 @@ import { NavLink } from "react-router-dom";
 
 const SetPassword = () => {
   return (
-    <div className=" bg-gray-400 py-5 sm:py-10">
-      this setpassword
-      <div className=" sm:flex w-full px-5 sm:px-0 sm:w-9/12 min-h-scree mx-auto ">
+    <div className=" h-screen py-5 sm:py-10 sm:mt-8">
+      <div className="h-[80vh] sm:flex w-full px-5 sm:px-0 sm:w-9/12 shadow-md mx-auto sm:rounded-l-2xl  rounded-t-2xl sm:rounded-t-none">
         {/* 1st section  */}
-        <div className="  rounded-t-2xl  sm:px-0 sm:rounded-t-none sm:rounded-l-2xl relative bg-[#F8FAFC] py-5 w-full  sm:col-span-4/9">
+        <div className="relative bg-[#F8FAFC] py-5 w-full  sm:col-span-4/9">
           <div className="px-5">
             <NavLink to={"/home"} className="">
               <img src={logo} alt="" />
@@ -127,7 +126,7 @@ const SetPassword = () => {
             </div>
             <NavLink
               to={"/varifacation"}
-              className="rounded-lg py-2 text-center w-full text-white bg-gradient-to-t from-green-400 to-lime-300 "
+              className="rounded-lg py-4 text-center w-full text-white bg-gradient-to-t from-green-400 to-lime-300 "
             >
               Submit
             </NavLink>

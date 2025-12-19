@@ -3,53 +3,73 @@ import { NavLink } from "react-router-dom";
 
 const SignIn = () => {
   return (
-   <div className="bg-gray-200 py-20 " >
-     <div className="w-full sm:w-9/12  mx-auto">
-      <div className=" shadow-xl  rounded-2xl flex flex-col-reverse sm:flex-row   mx-auto ">
-        <div className="w-full p-5 sm:p-0 sm:w-4/8 rounded-xl sm:rounded-r-none ">
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-10 px-4 sm:px-6 lg:px-8">
+      {/* Main Container */}
+      <div className="max-w-5xl w-full flex flex-col md:flex-row bg-white shadow-2xl rounded-2xl overflow-hidden">
+        
+        {/* Left Side: Image (Hidden on very small screens or stacked) */}
+        <div className="md:w-1/2 w-full h-64 md:h-auto">
           <img
             src="https://housing.com/news/wp-content/uploads/2023/03/exterior-design-shutterstock_1932966368-1200x700-compressed.jpg"
-            alt=""
-            className="w-full h-full object-cover rounded-xl sm:rounded-r-none "
+            alt="Property"
+            className="w-full h-full object-cover"
           />
         </div>
-        <div className=" w-full sm:w-4/8 p-5 sm:p-16 rounded-r-2xl bg-white ">
-          <div className=" text-center">
-            <h1 className=" text-2xl font-semibold">Welcome to ZedProperty</h1>
-            <h2 className=" text-sm py-2 text-[#6B7280]">
+
+        {/* Right Side: Form */}
+        <div className="md:w-1/2 w-full p-8 sm:p-12 flex flex-col justify-center">
+          <div className="text-center mb-8">
+            <h1 className="text-3xl font-bold text-gray-800">Welcome to ZedProperty</h1>
+            <p className="text-sm text-gray-500 mt-2">
               Sign Up to Begin Your Property Journey
-            </h2>
+            </p>
           </div>
-          <div className=" pt-5 mx-auto grid grid-cols-1 justify-center ">
+
+          <form className="space-y-5">
+            {/* Email Field */}
             <div>
-              <h1 className="py-2 text-sm font-medium ">Email</h1>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="input border border-gray-100 w-full "
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none transition duration-200"
               />
             </div>
-            <div className="my-2">
-              <h1 className="py-2 text-sm font-semibold">Password</h1>
+
+            {/* Password Field */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Password</label>
               <input
                 type="password"
                 placeholder="Enter your password"
-                className="input border border-gray-100 w-full"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none transition duration-200"
               />
-              <NavLink to={"/user-forgetPassword"} className="text-sm font-medium py-2">Forget Password?</NavLink>
+              <div className="text-right mt-2">
+                <NavLink 
+                  to="/user-forgetPassword" 
+                  className="text-xs font-semibold text-gray-600 hover:text-green-500"
+                >
+                  Forgot Password?
+                </NavLink>
+              </div>
             </div>
-            <button className="rounded-lg py-1 text-white bg-gradient-to-t from-green-400 to-lime-300 ">
+
+            {/* Login Button */}
+            <button className="w-full py-3 px-4 bg-gradient-to-r from-green-400 to-lime-400 text-white font-bold rounded-lg shadow-lg hover:opacity-90 transition duration-300 transform hover:scale-[1.01]">
               Login
             </button>
-            <h1 className=" text-center font-semibold text-sm gap-1 pt-5">
-              Don’t have an account?
-              <NavLink to={"/user-registation"} className="text-green-400 pl-1">Register now</NavLink>
-            </h1>
-          </div>
+
+            {/* Footer Link */}
+            <p className="text-center text-sm text-gray-600 mt-6">
+              Don’t have an account? 
+              <NavLink to="/user-registation" className="text-green-500 font-bold ml-1 hover:underline">
+                Register now
+              </NavLink>
+            </p>
+          </form>
         </div>
       </div>
     </div>
-   </div>
   );
 };
 

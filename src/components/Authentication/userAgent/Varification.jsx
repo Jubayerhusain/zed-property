@@ -6,10 +6,9 @@ import { NavLink } from "react-router-dom";
 
 const Varification = () => {
   return (
-    <div className=" bg-gray-400 py-5 sm:py-10">
-      this v
-      <div className=" sm:flex w-full px-5 sm:px-0 sm:w-9/12 mx-auto ">
-        <div className=" relative  rounded-t-2xl  sm:px-0 sm:rounded-t-none sm:rounded-l-2xl bg-[#F8FAFC] py-5 w-full  sm:col-span-4/9">
+    <div className=" h-screen py-5 sm:py-10 sm:mt-8">
+      <div className="h-[80vh] sm:flex w-full px-5 sm:px-0 sm:w-9/12 shadow-md mx-auto sm:rounded-l-2xl  rounded-t-2xl sm:rounded-t-none">
+        <div className=" relative bg-[#F8FAFC] py-5 w-full  sm:col-span-4/9">
           <div className="px-5">
             <NavLink to={"/home"} className="">
               <img src={logo} alt="" />
@@ -99,42 +98,41 @@ const Varification = () => {
           </NavLink>
         </div>
         {/* 2nd section  */}
-        <div className=" w-full sm:col-span-6/9 px-5 sm:px-28 py-48 rounded-b-2xl sm:rounded-l-none sm:rounded-r-2xl bg-white ">
-          <div className=" text-center">
-            <h1 className=" text-2xl font-semibold">Enter Verification Code</h1>
-            <h2 className=" text-sm pt-2 text-[#6B7280]">
-               We’ve send a code to <a className=" text-black font-semibold" >mail@email.com</a>
-            </h2>
-          </div>
-          <div className=" pt-5 pb-7 mx-auto  grid grid-cols-6 gap-4 justify-center ">
-            {/* 1st input  */}
-            <input type="text" placeholder="" className="input rounded-lg" />
-            {/* 2nd input  */}
-            <input type="text" placeholder="" className="input rounded-lg" />
-            {/* 3rd input  */}
-            <input type="text" placeholder="" className="input rounded-lg" />
-            {/* 4th input   */}
-            <input type="text" placeholder="" className="input rounded-lg" />
-            {/* 5th input  */}
-            <input type="text" placeholder="" className="input rounded-lg" />
-            {/* 6th input  */}
-            <input type="text" placeholder="" className="input rounded-lg" />
-          </div>
-          <NavLink
-            to={"/join-as-agent/set-password"}
-            className="rounded-lg py-2 text-center px-32 sm:px-44 bg-[#E2E8F0] "
-          >
-            Submit
-          </NavLink>
-          <h1 className=" text-center font-medium text-sm gap-1 pt-5">
-            Didn’t receive the code?
+        <div className=" w-full sm:col-span-4/9 px-5 sm:px-28 py-48 rounded-b-2xl sm:rounded-l-none sm:rounded-r-2xl bg-white ">
+          <div className="w-[402px] mx-auto">
+            <div className=" text-center">
+              <h1 className=" text-2xl font-semibold">
+                Enter Verification Code
+              </h1>
+              <h2 className=" text-sm pt-2 text-[#6B7280]">
+                We’ve send a code to{" "}
+                <a className=" text-black font-semibold">mail@email.com</a>
+              </h2>
+            </div>
+            <div className=" pt-5 pb-7 w-full grid grid-cols-6 gap-4 justify-center ">
+              <input type="text" placeholder="" className="input rounded-lg" />
+              <input type="text" placeholder="" className="input rounded-lg" />
+              <input type="text" placeholder="" className="input rounded-lg" />
+              <input type="text" placeholder="" className="input rounded-lg" />
+              <input type="text" placeholder="" className="input rounded-lg" />
+              <input type="text" placeholder="" className="input rounded-lg" />
+            </div>
             <NavLink
-              to={"/join-as-agent/resend-it"}
-              className=" underline pl-1"
+              to={"/join-as-agent/set-password"}
+              className="rounded-lg py-4 text-center w-full pl-4 px-32 sm:px-44 bg-[#E2E8F0]"
             >
-              Resend it
+              Submit
             </NavLink>
-          </h1>
+            <h1 className=" text-center font-medium text-sm gap-1 pt-5">
+              Didn’t receive the code?
+              <NavLink
+                to={"/join-as-agent/resend-it"}
+                className=" underline pl-1"
+              >
+                Resend it
+              </NavLink>
+            </h1>
+          </div>
         </div>
       </div>
     </div>

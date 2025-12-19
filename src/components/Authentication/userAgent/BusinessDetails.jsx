@@ -7,8 +7,8 @@ import { NavLink } from "react-router-dom";
 const BusinessDetails = () => {
   return (
     <div>
-      <div className=" bg-gray-400 py-5 sm:py-10">
-        <div className=" sm:flex w-full px-5 sm:px-0 sm:w-9/12 h-main-screen mx-auto ">
+    <div className=" h-screen py-5 sm:py-10 sm:mt-8">
+      <div className="h-[80vh] sm:flex w-full px-5 sm:px-0 sm:w-9/12 shadow-md mx-auto sm:rounded-l-2xl  rounded-t-2xl sm:rounded-t-none">
           <div className=" relative rounded-t-2xl sm:rounded-t-none sm:rounded-l-2xl bg-[#F8FAFC] p-5 w-full  sm:w-4/9">
             <div className="">
               <NavLink to={"/home"} className="">
@@ -162,7 +162,7 @@ const BusinessDetails = () => {
               </div>
                  <NavLink
                 to={"/join-as-agent/varifacation"}
-                className="rounded-lg py-1 text-center mt-5 w-full text-white bg-gradient-to-t from-green-400 to-lime-300 "
+                className="rounded-lg py-3 text-center mt-5 w-full text-white bg-gradient-to-t from-green-400 to-lime-300 "
               >
                 Continue
               </NavLink>
