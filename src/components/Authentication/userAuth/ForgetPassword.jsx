@@ -1,50 +1,63 @@
 import React from 'react';
 import { GoArrowLeft } from "react-icons/go";
+import { NavLink } from "react-router-dom";
 
 const ForgetPassword = () => {
     return (
-    <div className="bg-gray-200 sm:py-20 p-5 " >
-     <div className="w-full sm:w-9/12  mx-auto">
-      <div className=" shadow-xl  rounded-2xl flex flex-col-reverse sm:flex-row   mx-auto ">
-        <div className="w-full pt-5 sm:p-0 sm:w-4/8 rounded-xl sm:rounded-r-none ">
-          <img
-            src="https://housing.com/news/wp-content/uploads/2023/03/exterior-design-shutterstock_1932966368-1200x700-compressed.jpg"
-            alt=""
-            className="w-full h-full object-cover rounded-xl sm:rounded-r-none "
-          />
-        </div>
-        <div className=" w-full sm:w-4/8 px-10 py-32 sm:p-24 rounded-xl sm:rounded-l-none bg-white ">
-          <div className=" text-center">
-            <h1 className=" text-2xl font-semibold">Reset your password</h1>
-            <h2 className=" text-sm py-2 text-[#6B7280]">
-            Enter your registered email address
-            </h2>
-          </div>
-          <div className="  mx-auto grid grid-cols-1 justify-center ">
-            <div className='py-5'>
-              <h1 className="py-2 text-sm font-medium ">Email</h1>
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="input border border-gray-100 w-full "
-              />
-            </div>
-            <button className="rounded-lg py-1 text-white bg-gradient-to-t from-green-400 to-lime-300 ">
-             Reset Password
-            </button>
-            <div className=' pt-5 flex items-center justify-center gap-2' >
-                <div>
-                    <GoArrowLeft></GoArrowLeft>
+        <div className="min-h-screen flex items-center justify-center bg-gray-50 py-10 px-4">
+            <div className="flex flex-col md:flex-row w-full max-w-5xl bg-white shadow-2xl rounded-2xl overflow-hidden">
+                
+                {/* Left Side: Image (Visible on desktop, moves to bottom on mobile) */}
+                <div className="w-full md:w-1/2 h-56 md:h-auto order-2 md:order-1">
+                    <img
+                        src="https://housing.com/news/wp-content/uploads/2023/03/exterior-design-shutterstock_1932966368-1200x700-compressed.jpg"
+                        alt="Property Exterior"
+                        className="w-full h-full object-cover"
+                    />
                 </div>
-                <h1 className='text-sm font-semibold'>
-                    Back to login
-                </h1>
+
+                {/* Right Side: Form */}
+                <div className="w-full md:w-1/2 p-8 sm:p-14 lg:p-20 flex flex-col justify-center order-1 md:order-2">
+                    <div className="text-center mb-10">
+                        <h1 className="text-2xl sm:text-3xl font-bold text-gray-800">
+                            Reset your password
+                        </h1>
+                        <p className="text-sm text-gray-500 mt-2">
+                            Enter your registered email address to receive instructions
+                        </p>
+                    </div>
+
+                    <form className="w-full max-w-md mx-auto space-y-6" onSubmit={(e) => e.preventDefault()}>
+                        <div>
+                            <label className="block text-sm font-semibold text-gray-700 mb-1.5">
+                                Email Address
+                            </label>
+                            <input
+                                type="email"
+                                placeholder="Enter your email"
+                                className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-green-400 focus:outline-none transition-all"
+                                required
+                            />
+                        </div>
+
+                        <button 
+                            type="submit"
+                            className="w-full py-3.5 rounded-xl text-white font-bold bg-gradient-to-r from-green-400 to-lime-400 hover:opacity-90 transition-all shadow-lg active:scale-[0.98]"
+                        >
+                            Send Reset Link
+                        </button>
+
+                        <NavLink 
+                            to="/agent-SingIn" 
+                            className="flex items-center justify-center gap-2 text-gray-600 hover:text-black transition-colors pt-4"
+                        >
+                            <GoArrowLeft className="text-lg" />
+                            <span className="text-sm font-bold">Back to login</span>
+                        </NavLink>
+                    </form>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-   </div>
     );
 };
 
